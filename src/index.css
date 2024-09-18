@@ -2,27 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   html {
     @apply text-[62.5%] font-poppins text-base overflow-x-hidden;
 
   }
-  @media (max-width: 996px) {
-    html {
-      @apply text-[60%];
-    }
-  }
-  @media (max-width: 778px) {
-    html {
-      @apply text-[52.5%];
-    }
-  }
-  @media (max-width: 550px) {
-    html {
-      @apply text-[49.5%];
-    }
-  }
 }
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
@@ -36,36 +23,48 @@
   .dfAc {
     @apply flex items-center justify-center;
   }
+.btn{ @apply bg-sky-500 transition-all duration-500 ease-in-out text-center border-transparent border text-white
+  rounded-md hover:text-sky-500 hover:bg-white hover:border hover:border-sky-500}
   .df-jc {
     @apply flex justify-center;
   }
+
   .df-ac {
     @apply flex items-center;
   }
+
   .df-jsb-ac {
     @apply flex items-center justify-between;
   }
+
   .dfDcAc {
     @apply flex items-center justify-center flex-col;
   }
+
   .df-jsb {
     @apply flex justify-between;
   }
+
   .df-jse {
     @apply flex justify-self-end;
   }
+
   .df-fldc {
     @apply flex flex-col;
   }
+
   .df-flDc {
     @apply flex items-center justify-center flex-col;
   }
+
   .df-fldc-jc {
     @apply flex justify-center flex-col;
   }
+
   .df-fldc-ac {
     @apply flex items-center flex-col;
   }
+
   .dfAcW {
     @apply flex items-center justify-center flex-wrap;
   }
