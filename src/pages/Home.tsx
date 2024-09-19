@@ -1,9 +1,9 @@
 import Help from "../components/home/Help"
 import Hero from "../components/home/Hero"
-import img1 from "../assets/home1(1).jpg"
-import img2 from "../assets/home1(2).jpg"
-import img3 from "../assets/home1(3).jpg"
-import img4 from "../assets/home1(4).jpg"
+import img1 from "../assets/home1.jpg"
+import img2 from "../assets/home2.jpg"
+import img3 from "../assets/home3.jpg"
+import img4 from "../assets/home4.jpg"
 import FlexAndEnlarge from "../reusables/FlexAndEnlarge"
 
 const items: {

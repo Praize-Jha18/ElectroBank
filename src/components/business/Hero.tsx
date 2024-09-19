@@ -1,10 +1,16 @@
-import img from "../../assets/home1(3).jpg"
-const Hero = () => {
-  return (
-<div style={{background:`url(${img})`}} className="bg-cover h-80 bg-fixed bg-center ">
-<h1>Hi</h1>
-</div>
-)
-}
+import img from "../../assets/home1.jpg";
 
-export default Hero
+const Hero = () => {
+  console.log(img); 
+
+  return (
+    <div
+      className="bg-cover bg-fixed bg-center h-80"
+      style={{ backgroundImage: `url(${img})` }}
+    >
+      <h1>Hi</h1>
+    </div>
+  );
+};
+
+export default Hero;

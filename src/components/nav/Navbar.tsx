@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
     <Header/>
-    <Top/>
+    {/* <Top/> */}
     </>
   )
 }

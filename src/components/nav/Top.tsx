@@ -32,7 +32,8 @@ const Top = () => {
     return (
         <div className="navbar px-4 bg-slate-100 df-jsb">
             <div className="logo">
-                <picture><img src={logo} className='h-12' alt="logo" /></picture>
+             <Link to={"/"}><picture><img src={logo} className='h-12' alt="logo" /></picture></Link>
+                
             </div>
             <div className="links dfAc gap-4">
                 {links.map((value, key) =>
