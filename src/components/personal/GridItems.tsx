@@ -19,7 +19,7 @@ const GridItems = () => {
                 {items.map((value, key) => (
                     <div className="bg-white max-tab:w-full w-80 hover:shadow-[0_0_10px_#a3a3a3] transition-shadow duration-500 ease-in-out" key={key}>
                         <div className="img" >
-                            <picture><img src={value.img} className="w-full object-center object-cover h-64" alt="" /></picture>
+                            <picture><img src={value.img} className="w-full object-center object-cover h-64" alt={value.heading} /></picture>
                         </div>
                         <div className="body py-4 px-4">
                             <h1 className="">{value.heading}</h1>

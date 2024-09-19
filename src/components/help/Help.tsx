@@ -73,7 +73,7 @@ const Help = () => {
                         <div className="items bg-white shadow-md pb-8 " key={key}>
                             <div className="img">
                                 <picture>
-                                    <img src={value.img} className="h-80 w-[100%]" alt="" />
+                                    <img src={value.img} className="h-80 w-[100%]" alt={value.heading} />
                                 </picture>
                             </div>
                             <div className="detail df-fldc-jc gap-5 pt-4 px-6">
@@ -94,7 +94,7 @@ const Help = () => {
                         <div className="items bg-white  w-[18.3rem]  shadow-md   " key={index}>
                             <div className="img ">
                                 <picture>
-                                    <img src={value.img} className="h-[12.2rem]" alt="" />
+                                    <img src={value.img} className="h-[12.2rem]" alt={value.top} />
                                 </picture>
                             </div>
                             <div className="detail df-fldc gap-5 pt-4 h-[20rem] px-6">
