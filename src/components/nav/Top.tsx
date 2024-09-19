@@ -38,7 +38,7 @@ const Top = () => {
                 {links.map((value, key) =>
 
                 (
-                    <div className="relative" key={key} >
+                    <div className="relative" key={key}>
                         <Link to={""}>{value.link}</Link>
                         <div className="df-fldc absolute top-4 z-20">
                             {value.body?.map((e, v) => (

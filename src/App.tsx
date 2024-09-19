@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Navbar from './components/nav/Navbar'
 import Personal from './pages/Personal'
+import Business from './pages/Business'
 
 function App() {
 const router = createBrowserRouter([
@@ -16,8 +17,13 @@ const router = createBrowserRouter([
       element:<Home/>
     },
     
-    {path:"/personal",
+    {
+      path:"/personal",
       element:<Personal/>
+    },
+    {
+      path:"/business",
+      element:<Business/>
     }
     ]
   },

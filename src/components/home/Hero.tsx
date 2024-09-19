@@ -5,10 +5,10 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 const Hero = () => {
     return (
         <>
-            <div className="relative h-[75vh] dfAc">
+            <div className="relative h-[80vh] dfAc">
                 <div className="image">
                     <picture>
-                        <img src={engineers} className="h-[75vh] w-screen object-cover" alt="" />
+                        <img src={engineers} className="h-[80vh] w-screen object-cover" alt="" />
                     </picture>
                 </div>
                 <div className="details p-[4%] absolute top-0 h-[inherit] df-fldc-jc gap-6  w-screen bg-slate-800 bg-opacity-70" >
