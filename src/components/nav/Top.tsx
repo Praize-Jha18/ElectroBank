@@ -13,7 +13,8 @@ const RenderMultipleLinks = (props: { links: string[], parent: string }) => (
         key={key}
         className="block w-full px-4 text-[.8rem] font-semibold py-2 text-gray-700 hover:bg-gray-200"
       >
-        {value}
+        {value} 
+       
       </Link>
     ))}
   </>
@@ -82,7 +83,6 @@ const Top = () => {
           </g>
         </svg>
       </div>
-
 
       <div className="logo">
         <Link to="/"><picture><img src={logo} className="h-12" alt="logo" /></picture></Link>
