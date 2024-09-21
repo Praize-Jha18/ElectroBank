@@ -1,10 +1,9 @@
-import React, { lazy, Suspense } from 'react';
+import  { lazy, Suspense } from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/nav/Navbar';
 
-// Lazy-loaded components
 const ResourceDigitalAssets = lazy(() => import('./pages/resources/ResourceDigitalAssets'));
 const Loans = lazy(() => import('./pages/personal/Loans'));
 const InvestmentSolutions = lazy(() => import('./pages/personal/InvestmentSolutions'));

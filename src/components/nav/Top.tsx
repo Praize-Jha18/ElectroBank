@@ -71,7 +71,7 @@ const Top = () => {
   };
 
   return (
-    <div className="navbar pl-4 pr-20 bg-slate-100 df-jsb sticky top-0 z-50">
+    <div className="navbar shadow-lg pl-4 pr-20 bg-slate-100 df-jsb sticky top-0 z-50">
       <div className="h-4 w-4 max-nav:block hidden ">
         <svg xmlns="http://www.w3.org/2000/svg" id="bold" viewBox="0 0 24 24" className="h-full w-full">
           <g>
@@ -124,7 +124,7 @@ const Top = () => {
         >
           <Link to="/resources" className='text-sm' onClick={() => toggleDropdown('resources')}>Resources +</Link>
           {isOpen.resources && (
-            <div className="dropdown w-56 absolute left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg">
+            <div className="dropdown  w-56 df-fldc absolute bg-white border border-gray-200 rounded-lg shadow-lg">
               <RenderMultipleLinks links={resourcesLinks} parent="resources" />
             </div>
           )}
