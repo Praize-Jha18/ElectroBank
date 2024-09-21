@@ -64,7 +64,7 @@ const Help = () => {
     return (
         <>
             <div className=" bg-slate-100 pt-20 px-[12%] pb-10 max-tab:px-[6%] ">
-                <h1 className="text-center pb-10 text-4xl">How can we help you today?</h1>
+                <h1 className="text-center pb-10 text-4xl font-sans text-[#oocc]">How can we help you today?</h1>
                 <div className="top dfAc gap-12 max-tab:flex-wrap">
              
                     {topData.map((value, key) => (
@@ -75,8 +75,8 @@ const Help = () => {
                                 </picture>
                             </div>
                             <div className="detail df-fldc-jc gap-5 pt-4 px-6">
-                                <h3 >{value.heading}</h3>
-                                <p className="text-[#777777] text-[.7rem] font-semibold">{value.body}</p>
+                                <h3 className="">{value.heading}</h3>
+                                <p className="text-[#777777] text-[.8rem] font-sans font-medium">{value.body}</p>
                                 <Link to={value.to} className="text-sky-500 font-semibold hover:text-black">{value.link}
                                 </Link>
                             </div>
@@ -92,12 +92,12 @@ const Help = () => {
                         <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md   " key={index}>
                             <div className="img ">
                                 <picture>
-                                    <img src={value.img} className="h-48 max-tab:h-80 w-full object-center object-cover " alt={value.top} />
+                                    <img src={value.img} className="h-48 max-tab:h-60 w-full object-center object-cover " alt={value.top} />
                                 </picture>
                             </div>
-                            <div className="detail df-fldc gap-5 pt-4 h-80 max-tab:h-52 px-6">
+                            <div className="detail df-fldc gap-5 pt-4 h-60 max-tab:h-52 px-6">
                                 <h5>{value.top}</h5>
-                                <p className="text-[#777777] text-[.7rem] font-semibold">{value.detail}</p>
+                                <p className="text-[#777777] text-[.8rem] font-sans font-medium">{value.detail}</p>
                                 <Link to={value.to} className="text-sky-500 font-semibold hover:text-black">Learn more</Link>
                             </div>
                         </div>
@@ -111,9 +111,9 @@ const Help = () => {
                                     <img src={value.img} className="h-48 max-tab:h-80 w-full object-center object-cover " alt={value.top} />
                                 </picture>
                             </div>
-                            <div className="detail df-fldc gap-5 pt-4 h-80 max-tab:h-52 px-6">
+                            <div className="detail df-fldc gap-5 pt-4 h-72 max-tab:h-52 px-6">
                                 <h5>{value.top}</h5>
-                                <p className="text-[#777777] text-[.7rem] font-semibold">{value.detail}</p>
+                                <p className="text-[#777777] text-[.8rem] font-sans font-medium">{value.detail}</p>
                                 <Link to={value.to} className="text-sky-500 font-semibold hover:text-black">Learn more</Link>
                             </div>
                         </div>

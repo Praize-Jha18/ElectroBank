@@ -71,8 +71,9 @@ const Top = () => {
     }));
   };
 
+  // pr
   return (
-    <div className="navbar shadow-lg pl-4 pr-20 max-nav:h-16 bg-slate-100 df-jsb items-center sticky top-0 z-50">
+    <div className="navbar shadow-lg pl-4 pr-20 max-nav:px-10 max-nav:h-16 bg-slate-100 df-jsb items-center sticky top-0 z-50">
 <div className="h-8 w-8 max-nav:flex hidden rounded-full border-2 border-sky-500 p-1.5  justify-center items-center">
   <svg
     xmlns="http://www.w3.org/2000/svg"
