@@ -1,9 +1,11 @@
-import  { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/nav/Navbar';
 
+const BusinessLoans  = lazy(() => import('./pages/business/BusinessLoans'));
+const BusinessChecking = lazy(() => import('./pages/business/BusinessChecking'));
 const ResourceDigitalAssets = lazy(() => import('./pages/resources/ResourceDigitalAssets'));
 const Loans = lazy(() => import('./pages/personal/Loans'));
 const InvestmentSolutions = lazy(() => import('./pages/personal/InvestmentSolutions'));
@@ -56,8 +58,8 @@ function App() {
             { path: '', element: <BusinessIndex /> },
             { path: 'business-banking-solutions', element: <BusinessBankingSolutions /> },
             { path: 'business-savings-account', element: <BusinessSavingAccount /> },
-            { path: 'business-checking-account', element: <BusinessSavingAccount /> },
-            { path: 'business-loans', element: <BusinessSavingAccount /> },
+            { path: 'business-checking-account', element: <BusinessChecking /> },
+            { path: 'business-loans', element: <BusinessLoans /> },
             { path: 'commercial-real-estate-lending', element: <BusinessSavingAccount /> },
           ],
         },

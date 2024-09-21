@@ -10,6 +10,8 @@ export default {
         helvetica: ['Helvetica', 'sans-serif'], //
         quicksand: ['Quicksand', 'sans-serif'],
         muli: ['Muli', 'sans-serif'], //
+
+        montserrat: ['Montserrat', 'sans-serif'],
         sans: ['Roboto', 'sans-serif'], //
       },
       screens: {

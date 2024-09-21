@@ -16,7 +16,8 @@ const ReUsableDatails = (props: { detailsData: ReUsableDetailsType }) => {
                         </div>
                     ))}
                 </div>
-                {props.detailsData.bottom && <p className="font-numans  text-[1.4rem] text-center pb-8  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm">{props.detailsData.bottom}</p>}
+                {props.detailsData.bottom && <p
+ className="text-lg font-medium text-center pb-8  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm"                 >{props.detailsData.bottom}</p>}
             </div>
         </>
     )
