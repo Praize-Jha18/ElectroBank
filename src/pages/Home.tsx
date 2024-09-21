@@ -16,19 +16,19 @@ const items: {
       img: img1,
       heading: "BUSINESS BANKING",
       body: "Our business banking is body notch and we help your business with the Paycheck Protection Program.",
-      link: ""
+      link: "/business/business-banking-solutions"
   },
   {
       img: img2,
       heading: "AUTOMATED INVESTOR",
       body: "An IRA made easy. Relax and let’s do the hard work with our Premier Sea Investments. ",
-      link: ""
+      link: "/personal/investment-solutions"
   },
   {
       img: img3,
       heading: "HOME MORTGAGE",
       body: "Find the mortgage that fits your life. Don’t worry about your mortgage We have got you covered. ",
-      link: ""
+      link: "/personal/savings"
   }, {
       img: img4,
       heading: "INSURANCE",

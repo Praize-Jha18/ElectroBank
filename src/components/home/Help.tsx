@@ -16,32 +16,32 @@ const Help = () => {
         img: string;
     }[] = [
             {
-                top: "Cryptocurrency", detail: "Digital assets, like bitcoin, are an emerging asset class for investors. Our digital asset fund offers investors exposure to bitcoin and other assets.", to: "/", img: how4
+                top: "Cryptocurrency", detail: "Digital assets, like bitcoin, are an emerging asset class for investors. Our digital asset fund offers investors exposure to bitcoin and other assets.", to: "/resources/digital-assets", img: how4
             },
             {
                 top: "Real Estate Investment",
                 detail: "We have got you covered when it involves real estate investments. Our clients go to to sleep while we do all the hard job.", img: how5
-                , to: ""
+                , to: "/business/commercial-real-estate-lending"
             },
             {
                 top: "Cannabis Investments",
-                detail: "Big institutional investors are getting increasingly high on the growth potential for products derived from the cannabis plant, more commonly known as marijuana.", img: how6, to: ""
+                detail: "Big institutional investors are getting increasingly high on the growth potential for products derived from the cannabis plant, more commonly known as marijuana.", img: how6, to: "/resources/cannabis-investments"
             },
             {
                 top: "Retirement Planning",
                 detail: "Dramatic advances in healthcare have extended the lives of people in, predominantly, first-world and developed countries. That means that without adequate personal savings and/or pensions, people could easily outlive their retirement funds.", img: how7
-                , to: ""
+                , to: "/resources/retirement-&-spouse-program"
             },
             {
                 top: "Loans",
                 detail: "Our Business/ Personal Loan provides funds which you can repay over one to five years. You repay the loan in monthly set installments. Whatever your business plans, our fixed or revolving business loans can help you reach your goals.", img: how8
-                , to: ""
+                , to: "/personal/loans"
             },
             {
                 top: "PAMM and MAM",
                 detail: "The performance (profits and losses) of a PAMM or MAM account manager is distributed among the managed accounts. The clients’ managed accounts are connected to the account manager’s main account and all trades made by the manager are reflected proportionally in the clients’ accounts.",
                 img: how9
-                , to: ""
+                , to: "/resources/pamm-and-mam"
             }
 
         ]
@@ -52,13 +52,13 @@ const Help = () => {
             {
                 heading: "EliteCity Savings", img: how2,
                 body: "EliteCity Savings continues to serve the financial needs of individuals, farmers, businesses, and industries by offering the traditional banking products, as well as online solutions.",
-                link: "Learn More About Us", to: "/"
+                link: "Learn More About Us", to: "/about-us"
             }, {
                 heading: "Investors Relation",
                 img: how3,
                 body: "Loyalty is very important to us, and we focus upon maintaining long-term relationships. This is clearly reflected that most of our clients come to us via other client recommendations and referrals.",
                 link: "Learn More",
-                to: "/"
+                to: "/investors"
             }
         ]
     return (

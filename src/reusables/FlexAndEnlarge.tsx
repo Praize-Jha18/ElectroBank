@@ -9,8 +9,8 @@ const FlexAndEnlarge = (props: { items: { img: string, heading: string, body: st
                 <picture><img src={value.img} className="w-full object-center object-cover h-64" alt={value.heading} /></picture>
             </div>
             <div className="body py-4 px-4">
-                <h1 className="">{value.heading}</h1>
-                <p className="text-stone-600 text-sm py-4">{value.body}</p>
+                <h1 className="font-numans text-[#3a3a3a] text-xl">{value.heading}</h1>
+                <p className="text-stone-600 text-sm py-4 font-numans">{value.body}</p>
                 <Link to={value.link} className="text-sky-500 transition-color  duration-300 ease-in-out hover:text-black">LEARN MORE</Link>
             </div>
         </div>

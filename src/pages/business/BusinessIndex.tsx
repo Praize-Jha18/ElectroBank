@@ -17,19 +17,19 @@ const BusinessIndex = () => {
         img: img1,
         heading: "Accounts",
         body: "Streamline day-to-day financial matters with our business checking and savings options.",
-        link: ""
+        link: "/business/business-savings-account"
       },
       {
         img: img2,
         heading: "Business Loans",
         body: "Embrace growth and find new success with the supplemental financing your business needs.",
-        link: ""
+        link: "/business/business-loans"
       },
       {
         img: img3,
         heading: "Commercial Real Estate Lending",
         body: "Find a budget-friendly way to afford the next step.",
-        link: ""
+        link: "/business/commercial-real-estate-lending"
       },
     ]
   return (

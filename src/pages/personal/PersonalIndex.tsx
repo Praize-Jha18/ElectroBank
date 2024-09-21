@@ -13,7 +13,7 @@ const PersonalIndex = () => {
   const items: { img: string, heading: string, body: string, link: string }[] = [
     { img: img1, heading: "Checking", body: "Manage your dollars and cents with confidence.", link: `/${personal}/personal-checking` }, {
       img: img3,
-      heading: "Savings", body: "Plan for tomorrow’s expenses and commit to save.", link: `/${personal}/saving`
+      heading: "Savings", body: "Plan for tomorrow’s expenses and commit to save.", link: `/${personal}/savings`
     },
     { img: img2, heading: "Loans", body: "Find a budget-friendly way to afford the next step.", link: `/${personal}/loans` },
 
