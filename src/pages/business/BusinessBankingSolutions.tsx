@@ -18,7 +18,10 @@ const BusinessBankingSolutions = () => {
     ],
     bottom: null
   }
-  const listedItems = {
+  const listedItems: {
+    heading: string;
+    list: string[];
+} = {
     heading: "Payment processing services include:",
     list: ["Credit card processing",
       "Equipment purchasing or leasing",
@@ -26,8 +29,11 @@ const BusinessBankingSolutions = () => {
       "E-Commerce payment processing",
       "Convenient statement reconciliation"]
   }
-  const bottomListedItems = {
-    heading:"Full-service merchant card processing provides transaction processing capabilities including:",list:["Fraud monitoring","Reconciliation","Automatic transfer of merchant funds","Draft retrieval","Chargeback"]
+  const bottomListedItems: {
+    heading: string;
+    list: string[];
+} = {
+    heading: "Full-service merchant card processing provides transaction processing capabilities including:", list: ["Fraud monitoring", "Reconciliation", "Automatic transfer of merchant funds", "Draft retrieval", "Chargeback"]
   }
   // need ch
   return (
@@ -59,14 +65,14 @@ const BusinessBankingSolutions = () => {
 
         <div className="py-10">
 
-<h6 className="text-2xl pb-6 text-[#3a3a3a]  font-numans">{bottomListedItems.heading}</h6>
-<div className="">
-  {
-    bottomListedItems.list.map((value, key) => (
-      <p className="text-lg font-medium text-center pb-1  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm" key={key}>{value}</p>
-    ))
-  }    </div>
-</div>
+          <h6 className="text-2xl pb-6 text-[#3a3a3a]  font-numans">{bottomListedItems.heading}</h6>
+          <div className="">
+            {
+              bottomListedItems.list.map((value, key) => (
+                <p className="text-lg font-medium text-center pb-1  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm" key={key}>{value}</p>
+              ))
+            }    </div>
+        </div>
 
 
       </div>

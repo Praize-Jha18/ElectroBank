@@ -72,22 +72,34 @@ const Top = () => {
   };
 
   return (
-    <div className="navbar shadow-lg pl-4 pr-20 bg-slate-100 df-jsb sticky top-0 z-50">
-      <div className="h-4 w-4 max-nav:block hidden ">
-        <svg xmlns="http://www.w3.org/2000/svg" id="bold" viewBox="0 0 24 24" className="h-full w-full">
-          <g>
-            <path d="m9.25 0h-7.5c-.965 0-1.75.785-1.75 1.75v4.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-4.5c0-.965-.785-1.75-1.75-1.75z"></path>
-            <path d="m9.25 10h-7.5c-.965 0-1.75.785-1.75 1.75v10.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-10.5c0-.965-.785-1.75-1.75-1.75z"></path>
-            <path d="m22.25 16h-7.5c-.965 0-1.75.785-1.75 1.75v4.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-4.5c0-.965-.785-1.75-1.75-1.75z"></path>
-            <path d="m22.25 0h-7.5c-.965 0-1.75.785-1.75 1.75v10.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-10.5c0-.965-.785-1.75-1.75-1.75z"></path>
-          </g>
-        </svg>
-      </div>
+    <div className="navbar shadow-lg pl-4 pr-20 max-nav:h-16 bg-slate-100 df-jsb items-center sticky top-0 z-50">
+<div className="h-8 w-8 max-nav:flex hidden rounded-full border-2 border-sky-500 p-1.5  justify-center items-center">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    id="bold"
+    viewBox="0 0 24 24"
+    className="h-full w-full text-sky-500"
+    fill="currentColor"
+  >
+    <g>
+      <path d="m9.25 0h-7.5c-.965 0-1.75.785-1.75 1.75v4.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-4.5c0-.965-.785-1.75-1.75-1.75z"></path>
+      <path d="m9.25 10h-7.5c-.965 0-1.75.785-1.75 1.75v10.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-10.5c0-.965-.785-1.75-1.75-1.75z"></path>
+      <path d="m22.25 16h-7.5c-.965 0-1.75.785-1.75 1.75v4.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-4.5c0-.965-.785-1.75-1.75-1.75z"></path>
+      <path d="m22.25 0h-7.5c-.965 0-1.75.785-1.75 1.75v10.5c0 .965.785 1.75 1.75 1.75h7.5c.965 0 1.75-.785 1.75-1.75v-10.5c0-.965-.785-1.75-1.75-1.75z"></path>
+    </g>
+  </svg>
+</div>
+
+
+
 
       <div className="logo">
         <Link to="/"><picture><img src={logo} className="h-12" alt="logo" /></picture></Link>
       </div>
-      <div className="links  gap-6  max-nav:hidden dfAc  ">
+      <div className="max-nav:block hidden ">
+        <Link to="login" className='font-helvetica text-base font-semibold text-sky-500'>Login</Link>
+      </div>
+      <div className="links  gap-6  max-nav:hidden dfAc ">
         {/* Personal Dropdown */}
         <div
           className="relative"
