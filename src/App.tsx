@@ -2,27 +2,30 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/nav/Navbar';
+import { lazy } from 'react';
 
+const Loans = lazy(() => import("./pages/personal/Loans"));
 // personal imports
-import Loans from './pages/personal/Loans';
-import InvestmentSolutions from './pages/personal/InvestmentSolutions';
-import Personal from './pages/personal/Personal';
-import PersonalIndex from './pages/personal/PersonalIndex';
-import PersonalChecking from './pages/personal/PersonalChecking';
-import PersonalSaving from './pages/personal/PersonalSaving';
+
+const InvestmentSolutions = lazy(() => import('./pages/personal/InvestmentSolutions'));
+const Personal = lazy(() => import('./pages/personal/Personal'));
+const PersonalIndex = lazy(() => import('./pages/personal/PersonalIndex'));
+const PersonalChecking = lazy(() => import('./pages/personal/PersonalChecking'));
+const PersonalSaving = lazy(() => import('./pages/personal/PersonalSaving'));
 
 // Business imports
-import Business from './pages/business/Business';
-import BusinessIndex from './pages/business/BusinessIndex';
-import BusinessBankingSolutions from './pages/business/BusinessBankingSolutions';
-import BusinessSavingAccount from './pages/business/BusinessSavingAccount';
-import Resource from './pages/resources/Resource';
-import ResourceIndex from './pages/resources/ResourceIndex';
-import ResourceDigitalAsstes from './pages/resources/ResourceDigitalAsstes';
-import ResourceRASProgram from './pages/resources/ResourceRASProgram';
-import ResourcePAM from './pages/resources/ResourcePAM';
-import ResourceCAI from './pages/resources/ResourceCAI';
-import WaysToBank from './pages/WaysToBank';
+const Business = lazy(() => import('./pages/business/Business'));
+const BusinessIndex = lazy(() => import('./pages/business/BusinessIndex'));
+const BusinessBankingSolutions = lazy(() => import('./pages/business/BusinessBankingSolutions'));
+const BusinessSavingAccount = lazy(() => import('./pages/business/BusinessSavingAccount'));
+const Resource = lazy(() => import('./pages/resources/Resource'));
+const ResourceIndex = lazy(() => import('./pages/resources/ResourceIndex'));
+const ResourceDigitalAsstes = lazy(() => import('./pages/resources/ResourceDigitalAsstes'));
+const ResourceRASProgram = lazy(() => import('./pages/resources/ResourceRASProgram'));
+const ResourcePAM = lazy(() => import('./pages/resources/ResourcePAM'));
+const ResourceCAI = lazy(() => import('./pages/resources/ResourceCAI'));
+const WaysToBank = lazy(() => import('./pages/WaysToBank'));
+
 
 function App() {
   const router = createBrowserRouter([
@@ -60,7 +63,7 @@ function App() {
             { path: 'business-checking-account', element: <BusinessSavingAccount /> },
             { path: 'business-loans', element: <BusinessSavingAccount /> },
             { path: 'commercial-real-estate-lending', element: <BusinessSavingAccount /> },
-         
+
           ],
         },
         {
@@ -72,12 +75,12 @@ function App() {
             { path: 'retirement-spouse-program', element: <ResourceRASProgram /> },
             { path: 'pamm-and-mam', element: <ResourcePAM /> },
             { path: 'cannabis-investments', element: <ResourceCAI /> },
-         
+
           ],
         },
         {
           path: 'ways-to-bank',
-        element:<WaysToBank/>
+          element: <WaysToBank />
         }
       ],
     },

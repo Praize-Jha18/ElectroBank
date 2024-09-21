@@ -4,7 +4,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons"
 
 const Header = () => {
   return (
-    <div className="header bg-slate-300  df-jsb-ac px-8 h-14">
+    <div className="header bg-slate-300  df-jsb-ac px-8 h-14 max-nav:hidden">
       <div>
         <Link to="/about-us"className="mr-4">About Us</Link>
         <Link to="/contact-us">Contact Us</Link>
