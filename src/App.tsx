@@ -56,7 +56,7 @@ function App() {
           children: [
             { path: '', element: <BusinessIndex /> },
             { path: 'business-banking-solutions', element: <BusinessBankingSolutions /> },
-            { path: 'business-saving-account', element: <BusinessSavingAccount /> },
+            { path: 'business-savings-account', element: <BusinessSavingAccount /> },
             { path: 'business-checking-account', element: <BusinessSavingAccount /> },
             { path: 'business-loans', element: <BusinessSavingAccount /> },
             { path: 'commercial-real-estate-lending', element: <BusinessSavingAccount /> },
@@ -68,7 +68,7 @@ function App() {
           children: [
             { path: '', element: <ResourceIndex /> },
             { path: 'digital-assets', element: <ResourceDigitalAssets /> },
-            { path: 'retirement-spouse-program', element: <ResourceRASProgram /> },
+            { path: 'retirement-&-spouse-program', element: <ResourceRASProgram /> },
             { path: 'pamm-and-mam', element: <ResourcePAM /> },
             { path: 'cannabis-investments', element: <ResourceCAI /> },
           ],
