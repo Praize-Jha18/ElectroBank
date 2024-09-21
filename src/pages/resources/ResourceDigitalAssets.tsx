@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ResourceDigitalAsstes = () => {
+const ResourceDigitalAssets = () => {
   return (
     <div>ResourceDigitalAsstes</div>
   )
 }
 
-export default ResourceDigitalAsstes
+export default ResourceDigitalAssets
