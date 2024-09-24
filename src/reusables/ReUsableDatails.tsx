@@ -6,7 +6,7 @@ const ReUsableDatails = (props: { detailsData: ReUsableDetailsType }) => {
         <>
             <div className="bg-green-50   px-[15%] max-mdLap:px-[6%] py-14 w-screen text-center">
                 {/* max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm */}
-                <p className="text-lg font-medium text-center pb-8  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm">{props.detailsData.top}</p>
+                <p className="text-lg font-medium text-center pb-8  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm"  style={{ whiteSpace: 'pre-line' }}>{props.detailsData.top}</p>
                 <div className=" df-fldc-ac gap-4 mb-6">
                     {props.detailsData.mid.map((value, key) => (
                         <div key={key}>
@@ -16,7 +16,7 @@ const ReUsableDatails = (props: { detailsData: ReUsableDetailsType }) => {
                     ))}
                 </div>
                 {props.detailsData.bottom && <p
-                    className="text-lg font-medium text-center pb-8  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm"                  >{props.detailsData.bottom}</p>}
+                style={{ whiteSpace: 'pre-line' }}     className="text-lg font-medium text-center pb-8  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm"                  >{props.detailsData.bottom}</p>}
             </div>
         </>
     )

@@ -21,7 +21,7 @@ const BusinessBankingSolutions = () => {
   const listedItems: {
     heading: string;
     list: string[];
-} = {
+  } = {
     heading: "Payment processing services include:",
     list: ["Credit card processing",
       "Equipment purchasing or leasing",
@@ -32,7 +32,7 @@ const BusinessBankingSolutions = () => {
   const bottomListedItems: {
     heading: string;
     list: string[];
-} = {
+  } = {
     heading: "Full-service merchant card processing provides transaction processing capabilities including:", list: ["Fraud monitoring", "Reconciliation", "Automatic transfer of merchant funds", "Draft retrieval", "Chargeback"]
   }
   // need ch
@@ -58,7 +58,7 @@ const BusinessBankingSolutions = () => {
           <div className="">
             {
               listedItems.list.map((value, key) => (
-                <p className="text-lg font-medium text-center pb-1  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm" key={key}>{value}</p>
+                <p className="numans-paragraph" key={key}>{value}</p>
               ))
             }    </div>
         </div>
@@ -69,7 +69,7 @@ const BusinessBankingSolutions = () => {
           <div className="">
             {
               bottomListedItems.list.map((value, key) => (
-                <p className="text-lg font-medium text-center pb-1  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm" key={key}>{value}</p>
+                <p className="numans-paragraph" key={key}>{value}</p>
               ))
             }    </div>
         </div>

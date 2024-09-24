@@ -28,7 +28,7 @@ const BusinessChecking = () => {
     }
     return (
         <>
-            <ReUsableHero img={null} heading={"Business Checking"} height={null} />
+            <ReUsableHero img={null} heading={"Business Checking"} height={'50vh'} />
             <ReUsableDatails detailsData={detailsData} />
             <LearnMore text={"Personal Checking"} />
         </>)

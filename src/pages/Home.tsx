@@ -40,7 +40,7 @@ const Home = () => {
   return (
 <>
 <Hero/>
-<Help/>
+<Help show={true}/>
 <FlexAndEnlarge items={items} />
 </>  )
 }

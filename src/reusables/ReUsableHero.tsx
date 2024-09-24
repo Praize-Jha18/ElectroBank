@@ -13,8 +13,8 @@ const ReUsableHero = (props: { img: string | null; heading: string; height: stri
 
 
       </div>
-      <div className={`absolute pl-24 max-tab:pl-20 max-mdPhone:pl-16 df-ac ${props.img  == null?  " bg-teal-800 " :"bg-neutral-800"}  bg-opacity-70 h-full w-full`}>
-        <h1 className="text-4xl font-bold text-white font-numans">{props.heading}</h1>
+      <div className={`absolute pl-24 pr-6 max-tab:pl-20 max-mdPhone:pl-12 df-ac ${props.img  == null?  " bg-teal-800 " :"bg-neutral-800"}  bg-opacity-70 h-full w-full`}>
+        <h1 className="text-[3.125rem] leading-snug font-bold text-white font-numans w-[50%] max-mdLap:w-[70%] max-tab:w-[100%] max-tab:text-[2.5rem] max-mdPhone:text-[2rem] max-phone:text-[1.8rem]">{props.heading}</h1>
       </div>
     </div>
   );

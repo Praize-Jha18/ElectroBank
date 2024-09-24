@@ -23,8 +23,15 @@
   .dfAc {
     @apply flex items-center justify-center;
   }
-.btn{ @apply bg-sky-500 transition-all duration-500 ease-in-out text-center border-transparent border text-white
-  rounded-md hover:text-sky-500 hover:bg-white hover:border hover:border-sky-500}
+
+  .btn {
+    @apply bg-sky-500 transition-all duration-500 ease-in-out text-center border-transparent border text-white rounded-md hover:text-sky-500 hover:bg-white hover:border hover:border-sky-500
+  }
+
+  .numans-paragraph {
+    @apply text-lg font-medium text-center pb-1  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm
+  }
+
   .df-jc {
     @apply flex justify-center;
   }

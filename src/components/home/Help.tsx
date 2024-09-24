@@ -8,7 +8,7 @@ import how6 from "../../assets/how6.jpg"
 import how7 from "../../assets/how7.jpg"
 import how8 from "../../assets/how8.jpg"
 import how9 from "../../assets/how9.jpg"
-const Help = () => {
+const Help = (props:{show:boolean}) => {
     const data: {
         top: string;
         detail: string;
@@ -63,7 +63,9 @@ const Help = () => {
         ]
     return (
         <>
-            <div className=" bg-slate-100 pt-20 px-[12%] pb-10 max-tab:px-[6%] ">
+            <div className={`bg-slate-100 ${props.show && "pt-20"}  px-[12%] pb-10 max-tab:px-[6%]`}>
+                {props.show &&
+                <> 
                 <h1 className="text-center pb-10 text-4xl font-sans text-[#oocc]">How can we help you today?</h1>
                 <div className="top dfAc gap-12 max-tab:flex-wrap">
              
@@ -87,6 +89,9 @@ const Help = () => {
 
 
                 </div>
+                </>
+                }
+               
                 <div className="howWeCan dfAc  mt-10 gap-8  max-tab:flex-wrap">
                     {data.slice(0,3).map((value, index) => (
                         <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md   " key={index}>
