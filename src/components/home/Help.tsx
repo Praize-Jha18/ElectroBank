@@ -92,7 +92,7 @@ const Help = (props:{show:boolean}) => {
                 </>
                 }
                
-                <div className="howWeCan dfAc  mt-10 gap-8  max-tab:flex-wrap">
+                <div className="howWeCan dfAc  pt-10 gap-8  max-tab:flex-wrap">
                     {data.slice(0,3).map((value, index) => (
                         <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md   " key={index}>
                             <div className="img ">

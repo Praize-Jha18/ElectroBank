@@ -17,6 +17,7 @@ const Business = lazy(() => import('./pages/business/Business'));
 const BusinessIndex = lazy(() => import('./pages/business/BusinessIndex'));
 const BusinessBankingSolutions = lazy(() => import('./pages/business/BusinessBankingSolutions'));
 const BusinessSavingAccount = lazy(() => import('./pages/business/BusinessSavingAccount'));
+const BusinessCREL = lazy(() => import('./pages/business/BusinessCREL'));
 const Resource = lazy(() => import('./pages/resources/Resource'));
 const ResourceIndex = lazy(() => import('./pages/resources/ResourceIndex'));
 const ResourceRASProgram = lazy(() => import('./pages/resources/ResourceRASProgram'));
@@ -60,7 +61,7 @@ function App() {
             { path: 'business-savings-account', element: <BusinessSavingAccount /> },
             { path: 'business-checking-account', element: <BusinessChecking /> },
             { path: 'business-loans', element: <BusinessLoans /> },
-            { path: 'commercial-real-estate-lending', element: <BusinessSavingAccount /> },
+            { path: 'commercial-real-estate-lending', element: <BusinessCREL /> },
           ],
         },
         {

@@ -40,7 +40,7 @@ const BusinessBankingSolutions = () => {
     <>
       <ReUsableHero img={null} heading={"Business Banking Solutions"} height={"50vh"} />
 
-      <div className="bg-green-50   px-[15%] max-mdLap:px-[6%] py-14 w-screen text-center">
+      <div className="bg-purple-50   px-[15%] max-mdLap:px-[6%] py-14 w-screen text-center">
         <p className="text-lg font-medium text-center pb-8  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm">{detailsData.top}</p>
         <div className=" df-fldc-ac gap-4 mb-6">
           {detailsData.mid.map((value, key) => (
