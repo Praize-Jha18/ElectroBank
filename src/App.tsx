@@ -4,7 +4,9 @@ import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/nav/Navbar';
 
-const BusinessLoans  = lazy(() => import('./pages/business/BusinessLoans'));
+
+const About = lazy(() => import('./pages/About'));
+const BusinessLoans = lazy(() => import('./pages/business/BusinessLoans'));
 const BusinessChecking = lazy(() => import('./pages/business/BusinessChecking'));
 const ResourceDigitalAssets = lazy(() => import('./pages/resources/ResourceDigitalAssets'));
 const Loans = lazy(() => import('./pages/personal/Loans'));
@@ -41,6 +43,7 @@ function App() {
           path: '/',
           element: <Home />,
         },
+        { path: 'about-us', element: <About /> },
         {
           path: 'personal',
           element: <Personal />,
