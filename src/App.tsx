@@ -6,6 +6,7 @@ import Navbar from './components/nav/Navbar';
 
 
 const About = lazy(() => import('./pages/About'));
+const ContactUs = lazy(() => import('./pages/ContactUs'));
 const BusinessLoans = lazy(() => import('./pages/business/BusinessLoans'));
 const BusinessChecking = lazy(() => import('./pages/business/BusinessChecking'));
 const ResourceDigitalAssets = lazy(() => import('./pages/resources/ResourceDigitalAssets'));
@@ -44,6 +45,7 @@ function App() {
           element: <Home />,
         },
         { path: 'about-us', element: <About /> },
+        { path: 'contact-us', element: <ContactUs /> },
         {
           path: 'personal',
           element: <Personal />,
