@@ -1,7 +1,5 @@
-import React from 'react'
 import LearnMore from '../reusables/LearnMore'
 import ReUsableMiddleSections from '../reusables/ReUsableMiddleSections'
-import ReUsableHeroTH from '../reusables/ReUsableHeroTH'
 import img from "../assets/online-banking-.jpg"
 import { faUserCheck, faUserClock } from '@fortawesome/free-solid-svg-icons'
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons/faUserPlus'

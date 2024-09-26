@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import how1 from "../../assets/how1.jpg"
 import how2 from "../../assets/how2.jpg"
 import how3 from "../../assets/how3.jpg"
 import how4 from "../../assets/how4.jpg"

@@ -73,7 +73,7 @@ const BusinessLoans = () => {
                     <div className="">
                         <div className=" df-fldc-ac gap-2 mb-4">
                             {featuresTopData.map((value, key) => (
-                                <p className="numans-paragraph">
+                                <p key={key} className="numans-paragraph">
                                     {value.heading}:<span className="font-semibold">{value.bold}</span>.
                                     {value.light}
                                 </p>
@@ -81,7 +81,7 @@ const BusinessLoans = () => {
                         </div>
                         <p className="numans-paragraph"> Credit Solutions <span className="font-semibold">Powered by Fundation®</span></p>
                         <div className=" df-fldc-ac gap-2 mb-6">                            {featuresBottomData.map((value, key) => (
-                            <p className="numans-paragraph"><span className="font-semibold">{value.bold}: </span>
+                            <p  key={key} className="numans-paragraph"><span className="font-semibold">{value.bold}: </span>
                                 {value.light}.
                             </p>
                         ))}

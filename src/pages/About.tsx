@@ -1,4 +1,3 @@
-import React from 'react'
 import img from '../assets/business.jpg'
 import { Link } from 'react-router-dom'
 const About = () => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import ReUsableHero from '../../reusables/ReUsableHero'
 import ReUsableDatails from '../../reusables/ReUsableDatails'
 import LearnMore from '../../reusables/LearnMore'
