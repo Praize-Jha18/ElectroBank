@@ -1,5 +1,4 @@
 import LearnMore from "../../reusables/LearnMore"
-import ReUsableDatails from "../../reusables/ReUsableDatails"
 import ReUsableHero from "../../reusables/ReUsableHero"
 import ReUsableDetailsType from "../../reusables/types/reusableDetailsType"
 

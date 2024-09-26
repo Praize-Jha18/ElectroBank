@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 const FlexAndEnlarge = (props: { items: { img: string, heading: string, body: string,  link: string,}[] ,headingFont:string,pFont:string,lFont:string}) => {
   return (

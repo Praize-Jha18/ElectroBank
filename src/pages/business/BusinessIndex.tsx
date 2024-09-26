@@ -36,7 +36,7 @@ const BusinessIndex = () => {
     <>
       <ReUsableHero heading="Business Banking" img={img} height="50vh" />
       <ShortNote to="/account/login" link="INTERNET BANKING" body="You have big goals for your business. Pair your efforts with effective financial solutions and watch ideas take shape." />
-      <FlexAndEnlarge items={items} />
+      <FlexAndEnlarge items={items} headingFont={"font-numans"} pFont={"font-numans"} lFont={"font-numans"} />
       <LearnMore text="Business Banking" />
     </>
   )
