@@ -23,7 +23,7 @@ const PersonalIndex = () => {
     <>
       <ReUsableHero heading="Personal Banking" img={img} height={null} />
       <ShortNote to="/account/login" link="Internet Banking" body="From everyday transactions to major purchasing decisions, we’re here to ensure the reliable financial tools you need are always available." />
-      <FlexAndEnlarge items={items} />
+      <FlexAndEnlarge items={items} headingFont={"font-numans"} pFont={"font-numans"} lFont={"font-numans"} />
       <LearnMore  text={"Personal Banking"}/>
     </>
   )

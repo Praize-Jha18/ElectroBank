@@ -70,10 +70,10 @@ const Help = (props:{show:boolean}) => {
                 <div className="top dfAc gap-12 max-tab:flex-wrap">
              
                     {topData.map((value, key) => (
-                        <div className="items max-tab:w-full bg-white shadow-md pb-8 " key={key}>
+                        <div className="items max-tab:w-full bg-white shadow-md pb-8 rounded-lg" key={key}>
                             <div className="img">
                                 <picture>
-                                    <img src={value.img} className="h-80 w-full object-center object-cover" alt={value.heading} />
+                                    <img src={value.img} className="h-80 w-full ro rounded-t-lg object-center object-cover" alt={value.heading} />
                                 </picture>
                             </div>
                             <div className="detail df-fldc-jc gap-5 pt-4 px-6">
@@ -94,10 +94,10 @@ const Help = (props:{show:boolean}) => {
                
                 <div className="howWeCan dfAc  pt-10 gap-8  max-tab:flex-wrap">
                     {data.slice(0,3).map((value, index) => (
-                        <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md   " key={index}>
+                        <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md   rounded-lg" key={index}>
                             <div className="img ">
                                 <picture>
-                                    <img src={value.img} className="h-48 max-tab:h-60 w-full object-center object-cover " alt={value.top} />
+                                    <img src={value.img} className="h-48 max-tab:h-60 w-full object-center object-cover rounded-t-lg" alt={value.top} />
                                 </picture>
                             </div>
                             <div className="detail df-fldc gap-5 pt-4 h-60 max-tab:h-52 px-6">
@@ -110,10 +110,10 @@ const Help = (props:{show:boolean}) => {
                 </div>
                 <div className="howWeCan dfAc  mt-10 gap-8  max-tab:flex-wrap">
                     {data.slice(3,6).map((value, index) => (
-                        <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md   " key={index}>
+                        <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md  rounded-lg " key={index}>
                             <div className="img ">
                                 <picture>
-                                    <img src={value.img} className="h-48 max-tab:h-80 w-full object-center object-cover " alt={value.top} />
+                                    <img src={value.img} className="h-48 max-tab:h-80 w-full object-center object-cover rounded-t-lg" alt={value.top} />
                                 </picture>
                             </div>
                             <div className="detail df-fldc gap-5 pt-4 h-72 max-tab:h-52 px-6">
