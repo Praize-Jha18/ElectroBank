@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react';
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
+import { createBrowserRouter, Outlet, RouterProvider, useLocation } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/nav/Navbar';
@@ -28,6 +28,24 @@ const ResourcePAM = lazy(() => import('./pages/resources/ResourcePAM'));
 const ResourceCAI = lazy(() => import('./pages/resources/ResourceCAI'));
 const WaysToBank = lazy(() => import('./pages/WaysToBank'));
 
+const TitleUpdater = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Define titles for each route
+    const titles = {
+      '/': 'Home - My App',
+      '/about': 'About Us - My App',
+      '/contact': 'Contact Us - My App',
+    };
+console.log(location.pathname);
+    // Update the document title based on the current route
+    // document.title = titles[location.pathname] || 'My App';
+  }, [location]);
+
+  return null;
+};
+
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +54,7 @@ function App() {
       element: (
         <>
           <Navbar />
+          <TitleUpdater/>
           <Outlet />
         </>
       ),
