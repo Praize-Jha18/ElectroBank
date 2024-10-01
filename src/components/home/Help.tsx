@@ -7,7 +7,7 @@ import how6 from "../../assets/how6.jpg"
 import how7 from "../../assets/how7.jpg"
 import how8 from "../../assets/how8.jpg"
 import how9 from "../../assets/how9.jpg"
-const Help = (props:{show:boolean}) => {
+const Help = (props: { show: boolean }) => {
     const data: {
         top: string;
         detail: string;
@@ -64,42 +64,42 @@ const Help = (props:{show:boolean}) => {
         <>
             <div className={`bg-slate-100 ${props.show && "pt-20"}  px-[12%] pb-10 max-tab:px-[6%]`}>
                 {props.show &&
-                <> 
-                <h1 className="text-center pb-10 text-4xl font-sans text-[#oocc]">How can we help you today?</h1>
-                <div className="top dfAc gap-12 max-tab:flex-wrap">
-             
-                    {topData.map((value, key) => (
-                        <div className="items max-tab:w-full bg-white shadow-md pb-8 rounded-lg" key={key}>
-                            <div className="img">
-                                <picture>
-                                    <img src={value.img} className="h-80 w-full ro rounded-t-lg object-center object-cover" alt={value.heading} />
-                                </picture>
-                            </div>
-                            <div className="detail df-fldc-jc gap-5 pt-4 px-6">
-                                <h3 className="">{value.heading}</h3>
-                                <p className="text-[#777777] text-[.8rem] font-sans font-medium">{value.body}</p>
-                                <Link to={value.to} className="text-sky-500 font-semibold hover:text-black">{value.link}
-                                </Link>
-                            </div>
+                    <>
+                        <h1 className="text-center pb-10 text-4xl font-sans text-[#oocc]">How can we help you today?</h1>
+                        <div className="top dfAc gap-12 max-tab:flex-wrap">
+
+                            {topData.map((value, key) => (
+                                <div className="items max-tab:w-full bg-white shadow-md pb-8 rounded-lg" key={key}>
+                                    <div className="img">
+                                        <picture>
+                                            <img src={value.img} className="h-80 w-full ro rounded-t-lg object-center object-cover" alt={value.heading} />
+                                        </picture>
+                                    </div>
+                                    <div className="detail df-fldc-jc gap-5 pt-4 px-6">
+                                        <h3 className="">{value.heading}</h3>
+                                        <p className="text-[#777777] text-[.8rem] font-sans font-medium">{value.body}</p>
+                                        <Link to={value.to} className="text-sky-500 font-semibold hover:text-black">{value.link}
+                                        </Link>
+                                    </div>
+                                </div>
+                            ))}
+
+
+
+
                         </div>
-                    ))}
-
-
-
-
-                </div>
-                </>
+                    </>
                 }
-               
-                <div className="howWeCan dfAc  pt-10 gap-8  max-tab:flex-wrap">
-                    {data.slice(0,3).map((value, index) => (
-                        <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md   rounded-lg" key={index}>
+
+                <div className="howWeCan dfAc  pt-10 gap-8  max-mdLap:flex-wrap">
+                    {data.slice(0, 3).map((value, index) => (
+                        <div className="items bg-white   max-mdLap:w-full w-[19.8rem]  shadow-md   rounded-lg" key={index}>
                             <div className="img ">
                                 <picture>
-                                    <img src={value.img} className="h-48 max-tab:h-60 w-full object-center object-cover rounded-t-lg" alt={value.top} />
+                                    <img src={value.img} className="h-48 max-mdLap:h-60 w-full object-center object-cover rounded-t-lg" alt={value.top} />
                                 </picture>
                             </div>
-                            <div className="detail df-fldc gap-5 pt-4 h-60 max-tab:h-52 px-6">
+                            <div className="detail df-fldc gap-5 pt-4 h-60 max-phone:h-[16rem]  max-nav:h-72 max-mdLap:h-52 px-6">
                                 <h5>{value.top}</h5>
                                 <p className="text-[#777777] text-[.8rem] font-sans font-medium">{value.detail}</p>
                                 <Link to={value.to} className="text-sky-500 font-semibold hover:text-black">Learn more</Link>
@@ -107,15 +107,15 @@ const Help = (props:{show:boolean}) => {
                         </div>
                     ))}
                 </div>
-                <div className="howWeCan dfAc  mt-10 gap-8  max-tab:flex-wrap">
-                    {data.slice(3,6).map((value, index) => (
-                        <div className="items bg-white   max-tab:w-full w-[19.8rem]  shadow-md  rounded-lg " key={index}>
+                <div className="howWeCan dfAc  mt-10 gap-8  max-mdLap:flex-wrap">
+                    {data.slice(3, 6).map((value, index) => (
+                        <div className="items bg-white   max-mdLap:w-full w-[19.8rem]  shadow-md  rounded-lg " key={index}>
                             <div className="img ">
                                 <picture>
-                                    <img src={value.img} className="h-48 max-tab:h-80 w-full object-center object-cover rounded-t-lg" alt={value.top} />
+                                    <img src={value.img} className="h-48 max-mdLap:h-80 w-full object-center object-cover rounded-t-lg" alt={value.top} />
                                 </picture>
                             </div>
-                            <div className="detail df-fldc gap-5 pt-4 h-72 max-tab:h-52 px-6">
+                            <div className="detail df-fldc gap-5 pt-4 max-nav:h-[22rem] max-phone:h-[20rem] h-80 max-mdLap:h-52 px-6">
                                 <h5>{value.top}</h5>
                                 <p className="text-[#777777] text-[.8rem] font-sans font-medium">{value.detail}</p>
                                 <Link to={value.to} className="text-sky-500 font-semibold hover:text-black">Learn more</Link>

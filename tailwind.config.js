@@ -5,12 +5,12 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
+            fontFamily: {
         numans: ['Numans', 'sans-serif'],//
         helvetica: ['Helvetica', 'sans-serif'], //
         quicksand: ['Quicksand', 'sans-serif'],
         muli: ['Muli', 'sans-serif'], //
-
+        poppins: ['Poppins', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         sans: ['Roboto', 'sans-serif'], //
       },

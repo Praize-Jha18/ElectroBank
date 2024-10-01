@@ -22,11 +22,10 @@ const Hero = () => {
                     </div>
                     <p className="text-[#a7b6c3] text-xl">Kick-start your money goals this season.
                         <br></br>Earn more and have privacy with our several premium banking offers.</p>
-                    <Link to={"/auth/login"} className="bg-sky-500 transition-all  duration-500 ease-in-out inline text-white font-semibold text-center  text-md w-[15rem] py-3 hover:w-[17rem] rounded-lg">CREATE AN ACCOUNT! <FontAwesomeIcon className="pl-1" icon={faArrowRight} /></Link>
+                    <Link to={"/auth/login"} className="bg-primary transition-all  duration-500 ease-in-out inline text-white font-semibold text-center  text-md w-[15rem] py-3 hover:w-[17rem] rounded-lg">CREATE AN ACCOUNT! <FontAwesomeIcon className="pl-1" icon={faArrowRight} /></Link>
 
                 </div>
                 {/* Slide 2
-
 
 
 Starting at $0
