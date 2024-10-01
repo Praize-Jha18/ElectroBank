@@ -33,6 +33,7 @@ const AccountIndex = lazy(() => import('./pages/useronly/AccountIndex'));
 const Deposit = lazy(() => import('./pages/useronly/Deposit'));
 const BankTransfer = lazy(() => import('./pages/useronly/BankTransfer'));
 const RequestLoan = lazy(() => import('./pages/useronly/RequestLoan'));
+const Cards= lazy(() => import( './pages/useronly/Cards'));
 
 
 function App() {
@@ -115,6 +116,10 @@ function App() {
           path: "loan",
           element: <RequestLoan />
         },
+        {
+          path:"cards",
+          element:<Cards/>
+        }
       ]
 
     }
