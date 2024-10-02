@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Navbar from './components/nav/Navbar';
 import UserFooter from './pages/useronly/UserFooter';
 import { TitleUpdater } from './reusables/TitleUpdater';
+import AccountStatement from './pages/useronly/AccountStatement';
 
 const About = lazy(() => import('./pages/About'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
@@ -111,6 +112,9 @@ function App() {
         }, {
           path: "bank-transfer",
           element: <BankTransfer />
+        },
+        {
+          path:"account-statement",element:<AccountStatement/>
         },
         {
           path: "loan",

@@ -56,7 +56,7 @@ const topLinks = [
 
 const links = [
     {
-        to: "",
+        to: "/account/loan",
         link: "Loan",
         icon: (
             <svg
@@ -71,7 +71,7 @@ const links = [
         ),
     },
     {
-        to: "",
+        to: "/account/profile",
         link: "Settings",
         icon: (
             <svg
@@ -89,7 +89,7 @@ const links = [
 
 
     {
-        to: "",
+        to: "/account/account-statement",
         link: "History",
         icon: (
             <svg
@@ -115,7 +115,7 @@ const links = [
     },
 
     {
-        to: "",
+        to: "account/support",
         link: "Support",
         icon: (
             <svg
@@ -135,7 +135,7 @@ const links = [
         ),
     },
     {
-        to: "",
+        to: "account/change-password",
         link: "Password",
         icon: (
             <svg
@@ -155,7 +155,7 @@ const links = [
         ),
     },
     {
-        to: "",
+        to: "/account/cards",
         link: "Cards",
         icon: (<svg
             xmlns="http://www.w3.org/2000/svg"
