@@ -37,9 +37,10 @@ export const TitleUpdater = () => {
             '/account': 'Account - EliteCity Savings',
             '/account/deposit': 'Deposit - EliteCity Savings',
             '/account/loan': 'Loan - EliteCity Savings',
-            '/account/cards':'Card - EliteCity Savings',
+            '/account/cards': 'Card - EliteCity Savings',
             '/account/bank-transfer': 'Bank Transfer - EliteCity Savings',
             '/account/account-statement': 'Account Statement - EliteCity Savings',
+            '/account/domestic-transfer': 'Domestic Transfer - EliteCity Savings',
         };
 
         console.log(location.pathname);

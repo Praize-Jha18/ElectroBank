@@ -15,7 +15,7 @@ import { icon } from '@fortawesome/fontawesome-svg-core'
 <FontAwesomeIcon icon={faCreditCardFront} /> */}
 const topLinks = [
     {
-        to: "", link: "Wire Transfer", icon:
+        to: "/account/domestic-transfer", link: "Wire Transfer", icon:
             <div className='bg-[#6236ff] w-12 h-12 dfAc rounded-lg'>
                 <svg xmlns="http://www.w3.org/2000/svg" className=" w-6 h-6  text-white" viewBox="0 0 512 512">
                     <title>Swap Vertical</title>
@@ -25,14 +25,14 @@ const topLinks = [
             </div>
     },
     {
-        to: "", link: "Deposit", icon: <div className=" w-12 h-12 dfAc rounded-lg bg-[#1ddc70]">
+        to: "/account/deposit", link: "Deposit", icon: <div className=" w-12 h-12 dfAc rounded-lg bg-[#1ddc70]">
             <svg xmlns="http://www.w3.org/2000/svg" className="  w-6 h-6  text-white" viewBox="0 0 512 512">
                 <title>Arrow Down</title>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 268l144 144 144-144M256 392V100" fill="none" stroke="currentColor" />
             </svg> </div>
     },
     {
-        to: "", link: "Inter Bank", icon:
+        to: "/account/bank-transfer", link: "Inter Bank", icon:
             <div className=" w-12 h-12 dfAc rounded-lg bg-[#ff396f]">
 
                 <svg xmlns="http://www.w3.org/2000/svg" className=" w-16 h-6 text-white" viewBox="0 0 512 512">
@@ -42,7 +42,7 @@ const topLinks = [
             </div>
     },
     {
-        to: "", link: "Cards", icon: <div className="bg-[#ffb400] w-12 h-12 dfAc rounded-lg">
+        to: "/account/cards", link: "Cards", icon: <div className="bg-[#ffb400] w-12 h-12 dfAc rounded-lg">
             <svg xmlns="http://www.w3.org/2000/svg" className=" w-16 h-6 text-white" viewBox="0 0 512 512">
                 <title>Card</title>
                 <rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></rect>
@@ -115,7 +115,7 @@ const links = [
     },
 
     {
-        to: "account/support",
+        to: "/account/support",
         link: "Support",
         icon: (
             <svg
@@ -135,7 +135,7 @@ const links = [
         ),
     },
     {
-        to: "account/change-password",
+        to: "/account/change-password",
         link: "Password",
         icon: (
             <svg
@@ -241,15 +241,11 @@ const AccountIndex = () => {
                     <h1 className='pb-2 text-[#27173E] text-lg'>Quick Links</h1>
                     <div className="flex flex-wrap gap-x-4 gap-y-4" >
                         {links.map((link, index) => (
-                            <div
-                                key={index}
-                                className="flex w-[32.5%] flex-col items-center justify-center py-5 px-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow"
-                            >
-                                <Link to={link.to} className="text-center">
+                     
+                                <Link to={link.to} className="text-center flex w-[32.5%] flex-col items-center justify-center py-5 px-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
                                     {link.icon}
                                     <span className="text-[13px] text-gray-600 mt-1">{link.link}</span>
                                 </Link>
-                            </div>
                         ))}
                     </div>
                 </div>
