@@ -2,54 +2,35 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import UserFooter from './UserFooter'
-import { faBell, faTimesCircle, } from '@fortawesome/free-regular-svg-icons'
-import { faBars,  faTimes, faUser } from '@fortawesome/free-solid-svg-icons'
+import { ArrowDownOutline, ArrowUpOutline, Card, CardOutline, ChatbubbleOutline, KeyOutline, LogOutOutline, MailOutline, PersonOutline, PieChartOutline, SettingsOutline, SwapVertical, TimeOutline } from 'react-ionicons'
+import { faBell, } from '@fortawesome/free-regular-svg-icons'
+import { faBars, faTimes, faUser } from '@fortawesome/free-solid-svg-icons'
 import { TitleUpdater } from '../../reusables/TitleUpdater'
-import img from "../../assets/icon/img.png"
-import img2 from "../../assets/icon/img2.png"
-import img3 from "../../assets/icon/img3.png"
-import img4 from "../../assets/icon/img4.png"
-import img5 from "../../assets/icon/img5.png"
-import img6 from "../../assets/icon/img6.png"
-
 
 const topLinks = [
   {
-    to: "/account/domestic-transfer", link: "Wire Transfer", icon:
+    to: "/account/domestic-transfer", link: "Wire Transfer", icon: (
       <div className='bg-[#6236ff] w-12 h-12 dfAc rounded-lg'>
-        <svg xmlns="http://www.w3.org/2000/svg" className=" w-6 h-6  text-white" viewBox="0 0 512 512">
-          <title>Swap Vertical</title>
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M464 208L352 96 240 208M352 113.13V416M48 304l112 112 112-112M160 398V96" fill="none" stroke="currentColor" />
-        </svg>
-
-      </div>
+        <SwapVertical color={"white"} />
+      </div>)
   },
   {
-    to: "/account/deposit", link: "Deposit", icon: <div className=" w-12 h-12 dfAc rounded-lg bg-[#1ddc70]">
-      <svg xmlns="http://www.w3.org/2000/svg" className="  w-6 h-6  text-white" viewBox="0 0 512 512">
-        <title>Arrow Down</title>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M112 268l144 144 144-144M256 392V100" fill="none" stroke="currentColor" />
-      </svg> </div>
+    to: "/account/deposit", link: "Deposit", icon: (
+      <div className=" w-12 h-12 dfAc rounded-lg bg-[#1ddc70]">
+        <ArrowDownOutline color={"white"} />
+      </div>)
   },
   {
-    to: "/account/bank-transfer", link: "Inter Bank", icon:
+    to: "/account/bank-transfer", link: "Inter Bank", icon: (
       <div className=" w-12 h-12 dfAc rounded-lg bg-[#ff396f]">
-
-        <svg xmlns="http://www.w3.org/2000/svg" className=" w-16 h-6 text-white" viewBox="0 0 512 512">
-          <title>Arrow Up</title>
-          <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M112 244l144-144 144 144M256 120v292"></path>
-        </svg>
-      </div>
+        <ArrowUpOutline color={"white"} />
+      </div>)
   },
   {
-    to: "/account/", link: "Cards", icon: <div className="bg-[#ffb400] w-12 h-12 dfAc rounded-lg">
-      <svg xmlns="http://www.w3.org/2000/svg" className=" w-16 h-6 text-white" viewBox="0 0 512 512">
-        <title>Card</title>
-        <rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"></rect>
-        <path fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="60" d="M48 192h416M128 300h48v20h-48z"></path>
-      </svg>
-
-    </div>
+    to: "/account/", link: "Cards", icon: (
+      <div className="bg-[#ffb400] w-12 h-12 dfAc rounded-lg ">
+        <CardOutline color={"white"} />
+      </div>)
   }
 
 ];
@@ -58,13 +39,18 @@ const links = [
   {
     to: "/account/loan",
     link: "Loan",
-    icon: img4
+    icon: (
+      <div>
+        <Card color={"#27173E"} />
+      </div>
+    )
 
   },
   {
     to: "/account/profile",
     link: "Settings",
-    icon: img3
+    icon: (
+      <div><SettingsOutline color={"#27173E"} /></div>)
 
   },
 
@@ -72,40 +58,50 @@ const links = [
   {
     to: "/account/account-statement",
     link: "History",
-    icon: img2
-
-  },
-
-  {
-    to: "/account/support",
-    link: "Support",
-    icon: img5
+    icon: (
+      <div><TimeOutline color={"#27173E"} />
+      </div>)
 
   },
   {
     to: "/account/change-password",
     link: "Password",
-    icon: img6
+    icon: (
+      <div><KeyOutline color={"#27173E"} />
+      </div>)
+
+  },
+  {
+    to: "/account/support",
+    link: "Support",
+    icon: (
+      <div><ChatbubbleOutline color={"#27173E"} />
+      </div>)
 
   },
   {
     to: "/account/cards",
     link: "Cards",
-    icon: img
+    icon: (
+      <div>
+        <CardOutline color={"#27173E"} />
+      </div>
+    )
+
 
   }
 ];
 
-const drawerLinks: { text: string, link: string }[] = [
-  { text: "Dashboard", link: "./" },
-  { text: "My Profile", link: "./profile" },
-  { text: "Change Password", link: "./change-password" },
-  { text: "My Statement", link: "./account-statement" },
-  { text: "Domestic Transfer", link: "./domestic-transfer" },
-  { text: "Inter Bank Transfer", link: "./bank-transfer" },
-  { text: "Wire Transfer", link: "./domestic-transfer" },
-  { text: "Support", link: "./support" },
-  { text: "Log out", link: "./logout" },
+const drawerLinks: { text: string, link: string, icon: React.JSX.Element }[] = [
+  { text: "Dashboard", link: "./", icon: <PieChartOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "My Profile", link: "./profile", icon: <PersonOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "Change Password", link: "./change-password", icon: <KeyOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "My Statement", link: "./account-statement", icon: <TimeOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "Domestic Transfer", link: "./domestic-transfer", icon: <ArrowDownOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "Inter Bank Transfer", link: "./bank-transfer", icon: <ArrowUpOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "Wire Transfer", link: "./domestic-transfer", icon: <SwapVertical style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "Support", link: "./support", icon: <MailOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
+  { text: "Log out", link: "./logout", icon: <LogOutOutline style={{ height: "1.5rem", width: "1.4rem", color: "white" }} /> },
 ];
 const AccountIndex = () => {
   const Transaction = (props: { transactions: string }) => {
@@ -119,20 +115,20 @@ const AccountIndex = () => {
       </div>
     )
   }
-  const [nav, showNav] = useState<boolean>(true);
+  const [nav, showNav] = useState<boolean>(false);
   // set to false later
   return (
     <>
       <TitleUpdater />
       <div className="bg-sky-500 df-jsb-ac  h-16 px-8 fixed w-full font-poppins">
-        <FontAwesomeIcon icon={faBars} className='text-white h-6 cursor-pointer' onClick={() => showNav(true)} />
-        <p className='text-white text-lg'>EliteOceanic Savings</p>
+        <FontAwesomeIcon icon={faBars} className='text-white h-6 cursor-pointer  max-mdPhone:h-5' onClick={() => showNav(true)} />
+        <p className='text-white text-lg max-mdPhone:text-base'>EliteOceanic Savings</p>
         <div className="icons">
           <Link to={"./account-statement"}>
-            <FontAwesomeIcon icon={faBell} className='text-white h-6 ' />
+            <FontAwesomeIcon icon={faBell} className='text-white h-6  max-mdPhone:h-5' />
           </Link>
           <Link to={"./profile"}>
-            <FontAwesomeIcon icon={faUser} className='text-[#27173E] h-6 pl-6' />
+            <FontAwesomeIcon icon={faUser} className='text-[#27173E] h-6 pl-6  max-mdPhone:pl-5 max-mdPhone:h-5' />
           </Link>
 
 
@@ -142,6 +138,7 @@ const AccountIndex = () => {
             e.stopPropagation()
           }}>
             <div className="header px-4 dfAc gap-8 py-4">
+
               <FontAwesomeIcon icon={faUser} className='text-[#27173E] h-6 ' />
               <div className="pr-6">
                 <p className='text-base text-[#27173E]'>John Doe</p>
@@ -153,12 +150,15 @@ const AccountIndex = () => {
               <p className='text-sm text-white text-opacity-60'>Balance</p>
               <p className='text-3xl pt-2 mb-1 font-bold text-white'>$0.00</p>
             </div>
-<div className="drawerLinks">
-{drawerLinks.map((v,i)=>(
-  <Link to={v.link}></Link>
-))}
+            <div className="drawerLinks ">
+              {drawerLinks.map((v, i) => (
+                <Link to={v.link} key={i} className=' text-[#27173e] py-[10px] df-ac px-4'>
+                  <div className='bg-sky-500 rounded-full mr-4 w-9 h-9 dfAc'>{v.icon}</div>    
+                  <p className='text-sm'>{v.text}</p>  
+                </Link>
+              ))}
 
-</div>
+            </div>
           </div>
 
         </div>
@@ -201,8 +201,7 @@ const AccountIndex = () => {
               <Link to={link.to} className="
               text-center w-full  flex  flex-col items-center justify-center py-5 px-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow
               " key={key}>
-                {/* {link.icon} */}
-                <img src={link.icon} alt="" />
+                {link.icon}
                 <span className="text-[13px] text-gray-600 mt-1 ">{link.link}</span>
               </Link>
             ))}
@@ -211,8 +210,7 @@ const AccountIndex = () => {
             {links.slice(3, 6).map((link, key) => (
 
               <Link to={link.to} className="text-center w-full  flex  flex-col items-center justify-center py-5 px-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow" key={key}>
-                {/* {link.icon} */}
-                <img src={link.icon} alt="" />
+                {link.icon}
                 <span className="text-[13px] text-gray-600 mt-1">{link.link}</span>
               </Link>
             ))}
