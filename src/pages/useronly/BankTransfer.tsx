@@ -33,42 +33,42 @@ const BankTransfer = () => {
                         <input type="text" className='w-full block text-black mt-1 placeholder:text-stone-500 bg-slate-100 border-b-stone-500 border-b-[1px] pb-4 text-base outline-none' id="description" placeholder='Description' />
                     </div>
                     <div className="mt-4">
-                        <label htmlFor="accountType">Account Type
+                        <label htmlFor="accountType" className='text-stone-500 '>Account Type
 
                             <span className='text-red-500'> *</span>
                         </label>
                         <div>
                             <input type="radio" id="PERSONAL (Savings)" name="accountType" value="PERSONAL (Savings)" checked={selectedAccountType === 'PERSONAL (Savings)'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="PERSONAL (Savings)" className="pl-1">PERSONAL (Savings)</label>
+                            <label htmlFor="PERSONAL (Savings)" className="pl-1 text-stone-500 font-[400]">PERSONAL (Savings)</label>
                         </div>
                         <div>
                             <input type="radio" id="CURRENT" name="accountType" value="CURRENT" checked={selectedAccountType === 'CURRENT'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="CURRENT" className="pl-1">CURRENT</label>
+                            <label htmlFor="CURRENT" className="pl-1 text-stone-500 font-[400]">CURRENT</label>
                         </div>
 
                         <div>
                             <input type="radio" id="CHECKING" name="accountType" value="CHECKING" checked={selectedAccountType === 'CHECKING'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="CHECKING" className="pl-1">CHECKING</label>
+                            <label htmlFor="CHECKING" className="pl-1 text-stone-500 font-[400]">CHECKING</label>
                         </div><div>
                             <input type="radio" id="FIX DEPOSIT" name="accountType" value="FIX DEPOSIT" checked={selectedAccountType === 'FIX DEPOSIT'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="FIX DEPOSIT" className="pl-1">FIX DEPOSIT</label>
+                            <label htmlFor="FIX DEPOSIT" className="pl-1 text-stone-500 font-[400]">FIX DEPOSIT</label>
                         </div>
                         <div>
                             <input type="radio" id="NON RESIDENT" name="accountType" value="NON RESIDENT" checked={selectedAccountType === 'NON RESIDENT'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="NON RESIDENT" className="pl-1">NON RESIDENT</label>
+                            <label htmlFor="NON RESIDENT" className="pl-1 text-stone-500 font-[400]">NON RESIDENT</label>
                         </div>
 
                         <div>
                             <input type="radio" id="ONLINE BANKING" name="accountType" value="ONLINE BANKING" checked={selectedAccountType === 'ONLINE BANKING'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="ONLINE BANKING" className="pl-1">ONLINE BANKING</label>
+                            <label htmlFor="ONLINE BANKING" className="pl-1 text-stone-500 font-[400]">ONLINE BANKING</label>
                         </div>
                         <div>
                             <input type="radio" id="DOMICILIARY ACCOUNT" name="accountType" value="DOMICILIARY ACCOUNT" checked={selectedAccountType === 'DOMICILIARY ACCOUNT'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="DOMICILIARY ACCOUNT" className="pl-1">DOMICILIARY ACCOUNT</label>
+                            <label htmlFor="DOMICILIARY ACCOUNT" className="pl-1 text-stone-500 font-[400]">DOMICILIARY ACCOUNT</label>
                         </div>
                         <div>
                             <input type="radio" id="JOINT ACCOUNT" name="accountType" value="JOINT ACCOUNT" checked={selectedAccountType === 'JOINT ACCOUNT'} onChange={handleAccountTypeChange} />
-                            <label htmlFor="JOINT ACCOUNT" className="pl-1">JOINT ACCOUNT</label>
+                            <label htmlFor="JOINT ACCOUNT" className="pl-1 text-stone-500 font-[400]">JOINT ACCOUNT</label>
                         </div>
 
                     </div>
@@ -81,12 +81,5 @@ const BankTransfer = () => {
         </>
     )
 }
-
-// CHECKING
-// FIX DEPOSIT
-// NON RESIDENT
-// ONLINE BANKING
-// DOMICILIARY ACCOUNT
-// JOINT ACCOUNT
 
 export default BankTransfer

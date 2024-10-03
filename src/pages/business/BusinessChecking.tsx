@@ -5,7 +5,7 @@ import ReUsableDetailsType from "../../reusables/types/reusableDetailsType"
 
 const BusinessChecking = () => {
     const detailsData: ReUsableDetailsType = {
-        top: "At EliteCity Savings®, we prioritize the unique financial needs of businesses by offering checking accounts that suit various transaction requirements and account balances. Each account is backed by the dependable service you expect and deposits are reinvested into the community",
+        top: "At EliteOceanic Savings®, we prioritize the unique financial needs of businesses by offering checking accounts that suit various transaction requirements and account balances. Each account is backed by the dependable service you expect and deposits are reinvested into the community",
         mid: [
             {
                 heading: "Completely Free Checking",
@@ -24,7 +24,7 @@ const BusinessChecking = () => {
                 body: "Protect your business checking account from accidental overdrafts with Overdraft Privilege (ODP). This service is designed to help your business avoid high charges associated with returned checks and to spare you from the hassle of denied purchases and dishonored checks."
             },
         ],
-        bottom: "In the event of an accidental overdraft from your checking account, Overdraft Privilege can help. Instead of automatically returning unpaid, insufficient fund items (checks, etc.) that you may have, EliteCity Savings® will consider, without obligation on our part, payment of your reasonable overdrafts"
+        bottom: "In the event of an accidental overdraft from your checking account, Overdraft Privilege can help. Instead of automatically returning unpaid, insufficient fund items (checks, etc.) that you may have, EliteOceanic Savings® will consider, without obligation on our part, payment of your reasonable overdrafts"
     }
     return (
         <>

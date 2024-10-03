@@ -49,8 +49,8 @@ const Help = (props: { show: boolean }) => {
 
     }[] = [
             {
-                heading: "EliteCity Savings", img: how2,
-                body: "EliteCity Savings continues to serve the financial needs of individuals, farmers, businesses, and industries by offering the traditional banking products, as well as online solutions.",
+                heading: "EliteOceanic Savings", img: how2,
+                body: "EliteOceanic Savings continues to serve the financial needs of individuals, farmers, businesses, and industries by offering the traditional banking products, as well as online solutions.",
                 link: "Learn More About Us", to: "/about-us"
             }, {
                 heading: "Investors Relation",

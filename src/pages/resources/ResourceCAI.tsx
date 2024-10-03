@@ -12,7 +12,7 @@ Big institutional investors are getting increasingly high on the growth potentia
 
 Growth like this would further boost cannabis stocks and spur more entrants. A long list of cannabis-related stocks already trade on North American exchanges and include Cronos Group Inc. (CRON), Aurora Cannabis Inc. (ACB), Canopy Growth Corp. (CGC), and Tilray Inc. (TLRY).
 
-EliteCity Savings is a big investor in the cannabis market, we strive to help investor make good use of funds deposited in their accounts with the help of professional fund managers for the best possible investment returns from this flourishing sector.`,
+EliteOceanic Savings is a big investor in the cannabis market, we strive to help investor make good use of funds deposited in their accounts with the help of professional fund managers for the best possible investment returns from this flourishing sector.`,
       mid: [{
         heading: "Significance For Investors", body: `What’s striking is how rapidly cannabis investments are being embraced by Wall Street and other areas. In a poll of 120 senior executives at leading private equity, venture capital (VC), hedge fund, and other institutional investment organizations, almost 33% said that the cannabis industry has the greatest growth potential this year, a close second behind technology, according to accounting firm EisnerAmper, which did the survey. The most bullish were hedge funds, with 37% putting cannabis in first place, per BI.
 

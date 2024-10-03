@@ -41,6 +41,8 @@ const AccountStatement = lazy(() => import('./pages/useronly/AccountStatement'))
 const ChangePassword = lazy(() => import('./pages/useronly/ChangePassword'));
 const Support = lazy(() => import('./pages/useronly/Support'));
 const DomesticTransfer = lazy(() => import('./pages/useronly/DomesticTransfer'))
+const Fund = lazy(() => import('./pages/useronly/Fund'))
+const UserProfile = lazy(() => import('./pages/useronly/UserProfile'));
 
 const router = createBrowserRouter([
     {
@@ -138,6 +140,14 @@ const router = createBrowserRouter([
             }, {
                 path: "bank-transfer",
                 element: <BankTransfer />
+            },
+            {
+                path: "fund",
+                element: <Fund />
+            },
+            {
+                path: "profile",
+                element: <UserProfile />
             },
         ]
 

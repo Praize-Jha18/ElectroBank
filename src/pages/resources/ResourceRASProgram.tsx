@@ -12,7 +12,7 @@ const ResourceRASProgram = () => {
 
 In times of economic downturn retirees may choose to “come out of retirement” and re-enter the workforce on a seasonal, part-time or full-time basis to earn income and obtain benefits, especially costly health insurance coverage.
 
-Think EliteCity Savings when you think retirement. We have well structured retirement portfolio designed to suit each unique investor. Our vision for you is to retire and never worry about running out of money.`,
+Think EliteOceanic Savings when you think retirement. We have well structured retirement portfolio designed to suit each unique investor. Our vision for you is to retire and never worry about running out of money.`,
         mid: [{
           body: `A pension plan is a retirement plan that requires an employer to make contributions into a pool of funds set aside for a worker’s future benefit. The pool of funds is invested on the employee’s behalf, and the earnings on the investments generate income to the worker upon retirement.
 

@@ -30,7 +30,7 @@ const Hero = () => {
 
 Starting at $0
 
-EliteCity Savings
+EliteOceanic Savings
 Compare the Monthly Service Charge fees.
 You could save $144/yr with Free Checking
 

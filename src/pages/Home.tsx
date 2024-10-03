@@ -46,7 +46,7 @@ const Home = () => {
 {/* borrow money */}
 <div className="bg-slate-100 py-10 px-[4%]">
   <h2 className="text-sky-500 font-sans font-semibold text-3xl">Borrowing money is a big deal. We’re ready to help.</h2>
-  <p className="font-helvetica text-sm py-6">From calculators and rate charts to get you started, to experienced loan officers and bankers, EliteCity Savings has answers for all your loan and mortgage questions.</p>
+  <p className="font-helvetica text-sm py-6">From calculators and rate charts to get you started, to experienced loan officers and bankers, EliteOceanic Savings has answers for all your loan and mortgage questions.</p>
 
 </div>
 {/* 

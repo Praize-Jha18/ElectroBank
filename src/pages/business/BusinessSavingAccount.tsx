@@ -5,7 +5,7 @@ import ReUsableDetailsType from "../../reusables/types/reusableDetailsType"
 
 const BusinessSavingAccount = () => {
   const detailsData:ReUsableDetailsType = {
-    top: "As a business owner, you understand the importance of ensuring financial stability for your organization. When you open a business savings account at EliteCity Savings®, you are establishing a safe place where your reserves can flourish. Plus, deposits are reinvested in the community to promote economic strength.",
+    top: "As a business owner, you understand the importance of ensuring financial stability for your organization. When you open a business savings account at EliteOceanic Savings®, you are establishing a safe place where your reserves can flourish. Plus, deposits are reinvested in the community to promote economic strength.",
     mid: [
       {heading:"Business Savings",body:"Designed for businesses that want to build a savings fund, this account ensures cash reserves are readily accessible."},
       {heading:"Business Money Market Account",body:"With this savings option, businesses that maintain higher account balances are rewarded with a higher rate of interest."},

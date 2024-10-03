@@ -5,7 +5,7 @@ import ReUsableDetailsType from "../../reusables/types/reusableDetailsType"
 import LearnMore from "../../reusables/LearnMore"
 const PersonalSaving = () => {
   const detailsData: ReUsableDetailsType = {
-    top: "Saving for a rainy day, a sunny vacation, or the home of your dreams? A number of options are available to help you put away a little extra. And since EliteCity Savings® deposits are reinvested into the community, you’ll be supporting the financial well-being of surrounding neighborhoods while you save for the future.",
+    top: "Saving for a rainy day, a sunny vacation, or the home of your dreams? A number of options are available to help you put away a little extra. And since EliteOceanic Savings® deposits are reinvested into the community, you’ll be supporting the financial well-being of surrounding neighborhoods while you save for the future.",
     mid: [
       {heading:"Personal Savings Accounts",body:"Take the first step toward building your personal savings by utilizing a flexible account that will accommodate your goals."},
       {heading:"Money Market Accounts",body:"Our Money Market Accounts are designed to reward higher balances with competitive interest rates."},
