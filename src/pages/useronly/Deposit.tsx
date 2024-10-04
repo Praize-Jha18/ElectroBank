@@ -1,6 +1,5 @@
-import React from 'react'
 import UserNavbar from './UserNavbar'
-import { faAmazonPay, faBitcoin, faCcPaypal, faCcVisa, faGooglePay, faPaypal, faStripe, IconDefinition } from '@fortawesome/free-brands-svg-icons'
+import { faAmazonPay, faBitcoin, faCcPaypal, faCcVisa, faGooglePay, faStripe, IconDefinition } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

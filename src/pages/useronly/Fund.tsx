@@ -1,4 +1,3 @@
-import React from 'react'
 import UserNavbar from './UserNavbar'
 import img from '../../assets/delay-icon.png'
 import { Link } from 'react-router-dom'

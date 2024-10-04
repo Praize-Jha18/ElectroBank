@@ -1,4 +1,3 @@
-import React from 'react'
 import UserNavbar from './UserNavbar'
 import { Link } from 'react-router-dom'
 

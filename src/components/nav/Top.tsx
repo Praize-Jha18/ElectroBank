@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png';
 import { useState, useEffect } from 'react';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
