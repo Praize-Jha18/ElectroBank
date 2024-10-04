@@ -10,13 +10,13 @@ const Header = () => {
         <Link to="/contact-us">Contact Us</Link>
       </div>
       <div className="df-jsb-ac gap-[2rem]">
-        <Link to="/internet-banking">Internet Banking</Link>
+        <Link to="/auth/register">Internet Banking</Link>
         <div className="relative df-ac justify-start">
 
           <input type="text" className="pl-7 outline-none bg-slate-50 text-gray-700 border-[1px] border-gray-500 border-solid" name="" id="" placeholder="Search..." />
           <FontAwesomeIcon icon={faSearch} className="absolute text-gray-400 pl-2" />
         </div>
-        <Link to={"auth/login"} className="bg-sky-500 text-center text-white px-4 leading-[3.4rem]">Log in</Link>
+        <Link to={"/auth/login"} className="bg-sky-500 text-center text-white px-4 leading-[3.4rem]">Log in</Link>
       </div>
     </div>
   )

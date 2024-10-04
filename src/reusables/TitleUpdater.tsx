@@ -11,6 +11,8 @@ export const TitleUpdater = () => {
             '/about-us': 'About Us - EliteOceanic Savings',
             '/contact-us': 'Contact Us - EliteOceanic Savings',
             '/ways-to-bank': 'Ways To Banks - EliteOceanic Savings',
+            '/auth/login': 'Login - EliteOceanic Savings',
+            '/auth/register': 'Register - EliteOceanic Savings',
 
             // personal
             '/personal': 'Personal - EliteOceanic Savings',
