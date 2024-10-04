@@ -23,7 +23,9 @@
   .dfAc {
     @apply flex items-center justify-center;
   }
-
+.footerLinks{
+  @apply font-helvetica text-base text-[#54595f] max-mdLap:text-sm max-tab:text-lg
+}
   .btn {
     @apply bg-sky-500 transition-all duration-500 ease-in-out text-center border-transparent border text-white rounded-md hover:text-sky-500 hover:bg-white hover:border hover:border-sky-500
   }

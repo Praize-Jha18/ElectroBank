@@ -4,6 +4,9 @@ import Home from './pages/Home';
 import Navbar from './components/nav/Navbar';
 import UserFooter from './pages/useronly/UserFooter';
 import { TitleUpdater } from './reusables/TitleUpdater';
+import Footer from './components/footer/Footer';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
 
 
 const About = lazy(() => import('./pages/About'));
@@ -52,6 +55,7 @@ const router = createBrowserRouter([
                 <Navbar />
                 <TitleUpdater />
                 <Outlet />
+                <Footer />
             </>
         ),
         children: [
@@ -104,6 +108,16 @@ const router = createBrowserRouter([
     },
     {
         path: "account", element: <AccountIndex />
+    },
+    {
+        path: "auth", element: <>
+            <TitleUpdater />
+            <Outlet />
+        </>,
+        children: [
+            { path: "login", element: <Login /> },
+            { path: "register", element: <Register /> },
+        ]
     },
     {
         path: "account", element: <>

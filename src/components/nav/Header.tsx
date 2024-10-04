@@ -16,7 +16,7 @@ const Header = () => {
           <input type="text" className="pl-7 outline-none bg-slate-50 text-gray-700 border-[1px] border-gray-500 border-solid" name="" id="" placeholder="Search..." />
           <FontAwesomeIcon icon={faSearch} className="absolute text-gray-400 pl-2" />
         </div>
-        <Link to={"/login"} className="bg-sky-500 text-center text-white px-4 leading-[3.4rem]">Log in</Link>
+        <Link to={"auth/login"} className="bg-sky-500 text-center text-white px-4 leading-[3.4rem]">Log in</Link>
       </div>
     </div>
   )

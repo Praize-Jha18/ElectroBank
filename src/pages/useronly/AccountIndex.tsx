@@ -116,7 +116,6 @@ const AccountIndex = () => {
     )
   }
   const [nav, showNav] = useState<boolean>(false);
-  // set to false later
   return (
     <>
       <TitleUpdater />
@@ -130,8 +129,6 @@ const AccountIndex = () => {
           <Link to={"./profile"}>
             <FontAwesomeIcon icon={faUser} className='text-[#27173E] h-6 pl-6  max-mdPhone:pl-5 max-mdPhone:h-5' />
           </Link>
-
-
         </div>
         <div className={`drawer absolute h-screen w-screen bg-black bg-opacity-55 top-0 bottom-0 ${nav ? "left-0" : "left-[-200rem]"} transition-all ease-in-out duration-500 `} onClick={() => showNav(false)}>
           <div className="drawerContainer bg-white h-screen inline-block" onClick={(e: React.MouseEvent<HTMLDivElement>) => {
@@ -153,8 +150,8 @@ const AccountIndex = () => {
             <div className="drawerLinks ">
               {drawerLinks.map((v, i) => (
                 <Link to={v.link} key={i} className=' text-[#27173e] py-[10px] df-ac px-4'>
-                  <div className='bg-sky-500 rounded-full mr-4 w-9 h-9 dfAc'>{v.icon}</div>    
-                  <p className='text-sm'>{v.text}</p>  
+                  <div className='bg-sky-500 rounded-full mr-4 w-9 h-9 dfAc'>{v.icon}</div>
+                  <p className='text-sm'>{v.text}</p>
                 </Link>
               ))}
 
@@ -179,13 +176,11 @@ const AccountIndex = () => {
           </div>
 
         </div>
-        <div className="flex justify-between  px-16 mx-4 gap-4 py-4  bg-white rounded-bl-xl rounded-br-xl">
+        <div className="flex justify-between  px-16 max-phone:px-4 max-mdPhone:px-8 mx-4 gap-4 py-4  bg-white rounded-bl-xl rounded-br-xl">
           {topLinks.map((value, key) => (
             <div key={key} className=" text-center ">
-
-              <Link to={value.to} className="text-sm flex flex-col items-center text-[#27173E]">
+              <Link to={value.to} className="text-sm  flex flex-col  max-mdPhone:text-xs items-center text-[#27173E]">
                 <div className="pb-2">{value.icon}</div>
-
                 <p className='text-center'>{value.link}</p>
               </Link>
             </div>
