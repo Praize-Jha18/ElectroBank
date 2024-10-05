@@ -33,7 +33,9 @@
   .numans-paragraph {
     @apply text-lg font-medium text-center pb-1  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm
   }
-
+.registerInputStyle{
+ @apply w-full block text-black mt-1 placeholder:text-stone-500 bg-slate-100 border-b-stone-500 border-b-[1px]  h-10 text-base outline-none
+}
   .df-jc {
     @apply flex justify-center;
   }
