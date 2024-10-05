@@ -37,7 +37,7 @@ const Register = () => {
     { value: 'divorced', label: 'Divorced' },
   ];
 
-  const accountTypeOptions: optionType = [
+  const accountTypeOption: optionType = [
     { value: 'savings', label: 'Savings' },
     { value: 'current', label: 'Current' },
     { value: 'checking', label: 'Checking' },
@@ -144,6 +144,22 @@ const Register = () => {
               onChange={(option) => handleSelectChange('selectedGender', option)}
               styles={customStyles}
             />
+          </div>      <div className='mt-4'>
+            <label htmlFor="address" className='text-[#27173E] text-xs'>Address</label>
+            <input type="text" className='w-full block text-black mt-1 placeholder:text-stone-500 bg-slate-100 border-b-stone-500 border-b-[1px] pb-6 text-base outline-none' id="address" placeholder='House or Office Address' />
+          </div>
+          <div className='mt-4'>
+            <label htmlFor="Select Country" className='text-[#27173E] text-xs'>Account Type</label>
+            <div className="w-full">
+              <Select
+                options={accountTypeOption}
+                value={formState.selectedAccountType}
+                onChange={(option)=> handleSelectChange('selectedAccountType',option)}
+                styles={customStyles}
+                placeholder="Account Type"
+              />
+            </div>
+
           </div>
 
           {/* Country */}
