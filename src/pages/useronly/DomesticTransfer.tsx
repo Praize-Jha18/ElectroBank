@@ -1,16 +1,27 @@
-import  { useState } from 'react'
+import  { useMemo, useState } from 'react'
+import Select from "react-select";
+import countryList from "react-select-country-list";
 import UserNavbar from './UserNavbar'
+import customSelectStyles from './customStyle';
 
 const DomesticTransfer = () => {
     const [selectedAccountType, setSelectedAccountType] = useState('');
+    const options = useMemo(() => countryList().getData(), []);
+const [selectedCountry,setSelectedCountry] = useState(null)
+ 
+const countryChangeHandler = (selectedOption: any) => {
+    setSelectedCountry(selectedOption);
+  };
+ 
 
-    const handleAccountTypeChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
+
+const handleAccountTypeChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         setSelectedAccountType(event.target.value);
     };
     return (
         <>
             <UserNavbar header={'Domestic Transfer'} />
-            <div className="body pt-32 pb-36 font-poppins bg-slate-100 h-full">
+            <div className="body pt-32 pb-40 font-poppins bg-slate-100 h-full">
                 <h1 className='text-[#27173E] text-center text-3xl font-semibold pb-2'>Send Money</h1>
                 <h3 className='text-[#27173E] text-center text-base font-medium pb-3'>Fill the form carefully</h3>
 
@@ -32,6 +43,17 @@ const DomesticTransfer = () => {
                         <label htmlFor="bankName" className='text-[#27173E] text-xs'>Bank Name</label>
                         <input type="text" className='w-full block text-black mt-1 placeholder:text-stone-500 bg-slate-100 border-b-stone-500 border-b-[1px] h-10 text-base outline-none' id="bankName" placeholder='Bank Name' />
                     </div>
+                         {/* Country */}
+          <div className="mt-4">
+            <label htmlFor="country" className="text-[#27173E] text-xs">Select Country</label>
+            <Select
+              options={options}
+              value={selectedCountry}
+              onChange={(value) => countryChangeHandler(value)}
+              styles={customSelectStyles}
+              placeholder="Select a country"
+            />
+          </div>
                     <div className='mt-4'>
                         <label htmlFor="swiftCode" className='text-[#27173E] text-xs'>Swift Code</label>
                         <input type="text" className='w-full block text-black mt-1 placeholder:text-stone-500 bg-slate-100 border-b-stone-500 border-b-[1px] h-10 text-base outline-none' id="swiftCode" placeholder='Swift code' />
@@ -80,7 +102,7 @@ const DomesticTransfer = () => {
                         </div>
 
                     </div>
-                    <div className="fixed w-full bottom-16 pr-8  bg-slate-100 py-2">
+                    <div className="fixed w-full bottom-16 pr-8  bg-slate-100 py-4">
                         <button className='btn w-full text-lg h-14'>Transfer Funds</button>
                     </div>
                 </form>

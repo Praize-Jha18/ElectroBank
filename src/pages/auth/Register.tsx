@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+import customSelectStyles from "../useronly/customStyle";
 
 const Register = () => {
   type optionType = { value: string, label: string }[];
@@ -54,33 +55,7 @@ const Register = () => {
     { value: 'other', label: 'Other' },
   ];
 
-  const customStyles = {
-    control: (provided: any) => ({
-      ...provided,
-      width: '100%',
-      backgroundColor: '#f1f5f9',
-      border: 'none',
-      borderBottom: '1px solid #78716c',
-      borderRadius: "0",
-      paddingBottom: '.4rem',
-      fontSize: '1rem',
-      outline: 'none',
-      boxShadow: 'none',
-    }),
-    placeholder: (provided: any) => ({
-      ...provided,
-      color: '#78716c',
-    }),
-    singleValue: (provided: any) => ({
-      ...provided,
-      color: '#000000',
-    }),
-    menu: (provided: any) => ({
-      ...provided,
-      backgroundColor: '#f1f5f9',
-      width: '100%',
-    }),
-  };
+ 
 
   return (
     <>
@@ -131,7 +106,7 @@ const Register = () => {
               value={formState.selectedMaritalStatus}
               options={maritalStatusOptions}
               onChange={(option) => handleSelectChange('selectedMaritalStatus', option)}
-              styles={customStyles}
+              styles={customSelectStyles}
             />
           </div>
 
@@ -142,7 +117,7 @@ const Register = () => {
               value={formState.selectedGender}
               options={genderOptions}
               onChange={(option) => handleSelectChange('selectedGender', option)}
-              styles={customStyles}
+              styles={customSelectStyles}
             />
           </div>      <div className='mt-4'>
             <label htmlFor="address" className='text-[#27173E] text-xs'>Address</label>
@@ -155,7 +130,7 @@ const Register = () => {
                 options={accountTypeOption}
                 value={formState.selectedAccountType}
                 onChange={(option)=> handleSelectChange('selectedAccountType',option)}
-                styles={customStyles}
+                styles={customSelectStyles}
                 placeholder="Account Type"
               />
             </div>
@@ -169,7 +144,7 @@ const Register = () => {
               options={options}
               value={formState.selectedCountry}
               onChange={(option) => handleSelectChange('selectedCountry', option)}
-              styles={customStyles}
+              styles={customSelectStyles}
               placeholder="Select a country"
             />
           </div>
@@ -181,7 +156,7 @@ const Register = () => {
               options={currencyOptions}
               value={formState.selectedCurrency}
               onChange={(option) => handleSelectChange('selectedCurrency', option)}
-              styles={customStyles}
+              styles={customSelectStyles}
             />
           </div>
 

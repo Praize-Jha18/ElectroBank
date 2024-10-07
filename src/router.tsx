@@ -107,8 +107,7 @@ const router = createBrowserRouter([
         ],
     },
     {
-        path: "account", element: <AccountIndex />
-    },
+        path: "account", element: <AccountIndex />    },
     {
         path: "auth", element: <>
             <TitleUpdater />

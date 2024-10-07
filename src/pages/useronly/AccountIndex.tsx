@@ -27,7 +27,7 @@ const topLinks = [
       </div>)
   },
   {
-    to: "/account/", link: "Cards", icon: (
+    to: "/account/cards", link: "Cards", icon: (
       <div className="bg-[#ffb400] w-12 h-12 dfAc rounded-lg ">
         <CardOutline color={"white"} />
       </div>)
@@ -62,6 +62,13 @@ const links = [
       <div><TimeOutline color={"#27173E"} />
       </div>)
 
+  },{
+    to: "/account/support",
+    link: "Support",
+    icon: (
+      <div><ChatbubbleOutline color={"#27173E"} />
+      </div>)
+
   },
   {
     to: "/account/change-password",
@@ -71,14 +78,7 @@ const links = [
       </div>)
 
   },
-  {
-    to: "/account/support",
-    link: "Support",
-    icon: (
-      <div><ChatbubbleOutline color={"#27173E"} />
-      </div>)
-
-  },
+  
   {
     to: "/account/cards",
     link: "Cards",
@@ -218,6 +218,8 @@ const AccountIndex = () => {
         <Transaction transactions={'credit'} />
         <div className="pt-8 "></div>
         <Transaction transactions={'debit'} />
+        <div className="pb-20 "></div>
+
       </div>
       <UserFooter />
     </>
