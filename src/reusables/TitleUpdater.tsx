@@ -46,6 +46,8 @@ export const TitleUpdater = () => {
             '/account/change-password': 'Change Password - EliteOceanic Savings',
             '/account/fund': 'Fund - EliteOceanic Savings',
             '/account/profile': 'Profile - EliteOceanic Savings',
+            '/account/support': 'Support - EliteOceanic Savings',
+
         };
 
         console.log(location.pathname);
