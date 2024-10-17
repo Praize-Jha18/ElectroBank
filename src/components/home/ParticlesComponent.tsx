@@ -1,6 +1,8 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
+import { ISourceOptions } from "@tsparticles/engine";
+// import type { ISourceOptions } from "tsparticles-engine"; // Import correct options type
 
 interface ParticlesComponentProps {
   id: string; // Assuming 'id' is a required prop of type string
@@ -23,13 +25,9 @@ const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
     console.log(container);
   };
 
-  const options = useMemo(
+  // Specify options using the ISourceOptions type
+  const options: ISourceOptions = useMemo(
     () => ({
-      // background: {
-      //   color: {
-      //     value: "rgba(7,29,65,0.74)", // No background color here, only particles visible on a dark background
-      //   },
-      // },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -63,18 +61,8 @@ const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
           opacity: 0.9, // Increase opacity of the particle links to make them more visible
           width: 1,
         },
-        // move: {
-        //   direction: "none",
-        //   enable: true,
-        //   outModes: {
-        //     default: "bounce",
-        //   },
-        //   random: true,
-        //   speed: 1,
-        //   straight: false,
-        // },
         move: {
-          direction: "none",
+          direction: "none", // Valid string literal value for direction
           enable: true,
           outModes: {
             default: "bounce",
