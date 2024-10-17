@@ -2,7 +2,6 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 import { ISourceOptions } from "@tsparticles/engine";
-// import type { ISourceOptions } from "tsparticles-engine"; // Import correct options type
 
 interface ParticlesComponentProps {
   id: string; // Assuming 'id' is a required prop of type string
@@ -21,9 +20,9 @@ const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
     console.log(init);
   }, []);
 
-  const particlesLoaded = (container: any) => {
-    console.log(container);
-  };
+  // const particlesLoaded = (container: any) => {
+  //   console.log(container);
+  // };
 
   // Specify options using the ISourceOptions type
   const options: ISourceOptions = useMemo(
@@ -95,7 +94,7 @@ const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
   return (
     <Particles
       id={props.id}
-      init={particlesLoaded}
+      // init={particlesLoaded}
       options={options}
       className="absolute"
     />
