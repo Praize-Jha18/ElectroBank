@@ -99,7 +99,7 @@ const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
   return (
     <div className="absolute h-[40vh] w-full overflow-hidden" style={{overflow:"hidden"}}>
       <Particles
-      id={props.id} 
+      id={"particlesId"} 
       // init={particlesLoaded}
       options={options}  className="absolute inset-0 h-[40vh]" 
     /> 

@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="details p-[4%] df-fldc-jc gap-6 
                 " >
                      {/*  h-[inherit] */}
-                    <ParticlesComponent/>
+                    <ParticlesComponent />
                     <div className="text-white w-[10rem]">
                         <div>
                             <span className="text-6xl">
