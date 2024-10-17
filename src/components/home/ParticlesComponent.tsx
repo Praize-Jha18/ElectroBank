@@ -1,8 +1,12 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
-import { loadSlim } from "@tsparticles/slim"; 
+import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesComponent = (props) => {
+interface ParticlesComponentProps {
+  id: string; // Assuming 'id' is a required prop of type string
+}
+
+const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
@@ -12,9 +16,10 @@ const ParticlesComponent = (props) => {
     }).then(() => {
       setInit(true);
     });
+    console.log(init);
   }, []);
 
-  const particlesLoaded = (container) => {
+  const particlesLoaded = (container: any) => {
     console.log(container);
   };
 
@@ -58,14 +63,24 @@ const ParticlesComponent = (props) => {
           opacity: 0.9, // Increase opacity of the particle links to make them more visible
           width: 1,
         },
+        // move: {
+        //   direction: "none",
+        //   enable: true,
+        //   outModes: {
+        //     default: "bounce",
+        //   },
+        //   random: true,
+        //   speed: 1,
+        //   straight: false,
+        // },
         move: {
           direction: "none",
           enable: true,
           outModes: {
             default: "bounce",
           },
-          random: true,
-          speed: 1,
+          random: false,
+          speed: 4,
           straight: false,
         },
         number: {
