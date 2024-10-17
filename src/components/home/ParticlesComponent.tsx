@@ -3,11 +3,11 @@ import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 import { ISourceOptions } from "@tsparticles/engine";
 
-interface ParticlesComponentProps {
-  id: string; // Assuming 'id' is a required prop of type string
-}
+// interface ParticlesComponentProps {
+//   id: string; // Assuming 'id' is a required prop of type string
+// }: React.FC<ParticlesComponentProps>
 
-const ParticlesComponent: React.FC<ParticlesComponentProps> = () => {
+const ParticlesComponent = () => {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
