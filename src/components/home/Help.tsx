@@ -1,4 +1,8 @@
+import { useRef } from "react"
 import { Link } from "react-router-dom"
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 import how2 from "../../assets/how2.jpg"
 import how3 from "../../assets/how3.jpg"
 import how4 from "../../assets/how4.jpg"
@@ -8,6 +12,32 @@ import how7 from "../../assets/how7.jpg"
 import how8 from "../../assets/how8.jpg"
 import how9 from "../../assets/how9.jpg"
 const Help = (props: { show: boolean }) => {
+    // gsap.registerPlugin(useGSAP);
+    const boxRef = useRef(null);
+   
+    gsap.registerPlugin(ScrollTrigger);
+    useGSAP(
+        () => {
+            gsap.fromTo([boxRef.current], 
+                {
+                  opacity: 0, 
+                  y: 100 
+                }, 
+                {
+                  opacity: 1, 
+                  y: 0, 
+                  duration: 1,
+                  scrollTrigger: {
+                    trigger: boxRef.current,
+                    start: 'top 80%', 
+                    end: 'bottom 20%',
+                    toggleActions: 'play none none none', // Run animation once (on enter, no reverse)
+                  }
+                }
+              ); 
+            
+            
+            })
     const data: {
         top: string;
         detail: string;
@@ -62,7 +92,7 @@ const Help = (props: { show: boolean }) => {
         ]
     return (
         <>
-            <div className={`bg-slate-100 ${props.show && "pt-20"}  px-[12%] pb-10 max-tab:px-[6%]`}>
+            <div className={`bg-slate-100 ${props.show && "pt-20"}   box    px-[12%] pb-10 max-tab:px-[6%] relative`} ref={boxRef}>
                 {props.show &&
                     <>
                         <h1 className="text-center pb-10 text-4xl font-sans text-[#oocc]">How can we help you today?</h1>
@@ -91,7 +121,7 @@ const Help = (props: { show: boolean }) => {
                     </>
                 }
 
-                <div className="howWeCan dfAc  pt-10 gap-8  max-mdLap:flex-wrap">
+                <div className="howWeCan dfAc  pt-10 gap-8  max-mdLap:flex-wrap" >
                     {data.slice(0, 3).map((value, index) => (
                         <div className="items bg-white   max-mdLap:w-full w-[19.8rem]  shadow-md   rounded-lg" key={index}>
                             <div className="img ">

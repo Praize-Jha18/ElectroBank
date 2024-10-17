@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import engineers from "../../assets/engineers.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import ParticlesComponent from "./Particles"
 const Hero = () => {
     return (
         <>
@@ -11,6 +12,7 @@ const Hero = () => {
                         <img src={engineers} className="h-[80vh] w-screen object-cover" alt="" />
                     </picture>
                 </div>
+        <ParticlesComponent id="particles" />
                 <div className="details p-[4%] absolute top-0 h-[inherit] df-fldc-jc gap-6  w-screen bg-slate-800 bg-opacity-70" >
                     <div className="text-white w-[10rem]">
                         <div>
