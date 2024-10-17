@@ -2,7 +2,8 @@ import { Link } from "react-router-dom"
 import engineers from "../../assets/engineers.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
-import ParticlesComponent from "./Particles"
+import ParticlesComponent from "./ParticlesComponent"
+
 const Hero = () => {
     return (
         <>
