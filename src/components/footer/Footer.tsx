@@ -1,10 +1,13 @@
 
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Footer = () => {
+  const location = useLocation();
+  const isHome =  location.pathname == "/";
+  // needed this so the particle wont show 
   return (
     <>
-      <footer className='bg-purple-100 px-10 max-phone:px-6 pt-6'>
+      <footer className={`${isHome && "relative"} bg-purple-100 px-10 max-phone:px-6 pt-6`}>
         <div className="links df-ac gap-6 pt-4 font-semibold pb-4 max-tab:flex-col max-tab:items-start">
           <Link to={"/contact-us"} className='footerLinks'>Financial education</Link>
           <Link to={"/ways-to-bank"} className='footerLinks'>Ways to Bank</Link>

@@ -38,13 +38,15 @@ const items: {
     },
   ]
 const Home = () => {
+
   return (
     <>
+    
       <Hero />
       <Help show={true} />
       <FlexAndEnlarge items={items} headingFont={"font-helvetica"} pFont={"font-helvetica"} lFont={"font-sans"} />
 
-      <div className="bg-slate-100 py-10 px-16">
+      <div className="bg-slate-100 py-10 px-16 relative">
         <h2 className="text-sky-500 font-sans font-semibold text-3xl">Borrowing money is a big deal. We’re ready to help.</h2>
         <p className="font-helvetica text-sm py-6 text-[#7a7a7a] ">From calculators and rate charts to get you started, to experienced loan officers and bankers, EliteOceanic Savings has answers for all your loan and mortgage questions.</p>
         <div className="svgsLink dfAc px-12 py-10 gap-14 max-tab:gap-10 max-tab:px-10 max-mdPhone:flex-wrap   max-mdPhone:gap-8">

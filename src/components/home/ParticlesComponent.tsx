@@ -27,6 +27,11 @@ const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
   // Specify options using the ISourceOptions type
   const options: ISourceOptions = useMemo(
     () => ({
+          // background: {
+      //   color: {
+      //     value: "rgba(7,29,65,0.74)", // No background color here, only particles visible on a dark background
+      //   },
+      // },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -92,12 +97,13 @@ const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
   );
 
   return (
-    <Particles
-      id={props.id}
+    <div className="absolute h-[40vh] w-full overflow-hidden" style={{overflow:"hidden"}}>
+      <Particles
+      id={props.id} 
       // init={particlesLoaded}
-      options={options}
-      className="absolute"
-    />
+      options={options}  className="absolute inset-0 h-[40vh]" 
+    /> 
+   </div>
   );
 };
 

@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 
 const Header = () => {
+  const location = useLocation();
+  const isHome =  location.pathname == "/";
+  // needed this so the particle wont show 
   return (
-    <div className="header bg-slate-300  df-jsb-ac px-8 h-14 max-nav:hidden">
+    <div className={`${isHome && "relative"} header  bg-slate-300 z-50 df-jsb-ac px-8 h-14 max-nav:hidden`}>
       <div>
         <Link to="/about-us"className="mr-4">About Us</Link>
         <Link to="/contact-us">Contact Us</Link>

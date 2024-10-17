@@ -1,5 +1,5 @@
 import { useRef } from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -12,6 +12,10 @@ import how7 from "../../assets/how7.jpg"
 import how8 from "../../assets/how8.jpg"
 import how9 from "../../assets/how9.jpg"
 const Help = (props: { show: boolean }) => {
+    const location = useLocation();
+    const isHome =  location.pathname == "/";
+    // needed this so the particle wont show 
+    
     // gsap.registerPlugin(useGSAP);
     const boxRef = useRef(null);
    
@@ -92,7 +96,7 @@ const Help = (props: { show: boolean }) => {
         ]
     return (
         <>
-            <div className={`bg-slate-100 ${props.show && "pt-20"}   box    px-[12%] pb-10 max-tab:px-[6%] relative`} ref={boxRef}>
+            <div className={`bg-slate-100 ${props.show && "pt-20"}   box    px-[12%] pb-10 max-tab:px-[6%] ${isHome && "relative"}`} ref={boxRef}>
                 {props.show &&
                     <>
                         <h1 className="text-center pb-10 text-4xl font-sans text-[#oocc]">How can we help you today?</h1>
