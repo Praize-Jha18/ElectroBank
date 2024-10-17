@@ -7,7 +7,7 @@ interface ParticlesComponentProps {
   id: string; // Assuming 'id' is a required prop of type string
 }
 
-const ParticlesComponent: React.FC<ParticlesComponentProps> = (props) => {
+const ParticlesComponent: React.FC<ParticlesComponentProps> = () => {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
