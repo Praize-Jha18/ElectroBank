@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+// import { useEffect } from 'react';
+// import { useLocation } from 'react-router-dom';
 import Chatra from '@chatra/chatra';
+const useChatra = () => {
 
-const useChatra = (pathsToShowChatra: string[]) => {
-  const location = useLocation();
+// const useChatra = (pathsToShowChatra: string[]) => {
+  // const location = useLocation();
 //   Chatra('init', {
 //     ID: 'YOUR_CHATR_PUBLIC_KEY',
 //     setup: {
@@ -14,22 +15,23 @@ const useChatra = (pathsToShowChatra: string[]) => {
 //       },
 //     },
 //   });
-  useEffect(() => {
-    if (pathsToShowChatra.includes(location.pathname)) {
+  // useEffect(() => {
+    // if (pathsToShowChatra.includes(location.pathname)) {
         Chatra('init', {
             ID: import.meta.env.VITE_CHATRA_ID,
           });
-    } else {
-      Chatra('destroy'); 
-    }
-  }, [location, pathsToShowChatra]);
+    // } else {
+    //   Chatra('destroy'); 
+    // }
+  // }, [location, pathsToShowChatra]);
 };
 
 
 const ChatraComponent = () => {
-  const pathsToShowChatra = ['/home', '/contact-us', '/personal/investment-solutions', '/business']; 
+  // const pathsToShowChatra = ['/home', '/contact-us', '/personal/investment-solutions', '/business']; 
 
-  useChatra(pathsToShowChatra);
+  // useChatra(pathsToShowChatra);
+  useChatra();
 
   return (
     <div></div>

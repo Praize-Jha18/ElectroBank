@@ -53,7 +53,7 @@ const router = createBrowserRouter([
         path: '/',
         element: (
             <>
-            <ChatraComponent/>
+                <ChatraComponent />
                 <Navbar />
                 <TitleUpdater />
                 <Outlet />
@@ -124,6 +124,7 @@ const router = createBrowserRouter([
     {
         path: "account", element: <>
             <Outlet />
+            <ChatraComponent />
             <TitleUpdater />
             <UserFooter />
         </>,
