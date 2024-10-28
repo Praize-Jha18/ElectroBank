@@ -7,6 +7,7 @@ import { TitleUpdater } from './reusables/TitleUpdater';
 import Footer from './components/footer/Footer';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
+import ChatraComponent from './ChatraComponent';
 
 
 const About = lazy(() => import('./pages/About'));
@@ -52,6 +53,7 @@ const router = createBrowserRouter([
         path: '/',
         element: (
             <>
+            <ChatraComponent/>
                 <Navbar />
                 <TitleUpdater />
                 <Outlet />
@@ -107,7 +109,8 @@ const router = createBrowserRouter([
         ],
     },
     {
-        path: "account", element: <AccountIndex />    },
+        path: "account", element: <AccountIndex />
+    },
     {
         path: "auth", element: <>
             <TitleUpdater />

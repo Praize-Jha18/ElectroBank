@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -102,6 +102,17 @@ const Top = () => {
     }
   };
   const [nav, showNav] = useState<boolean>(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Reset nav state when the route changes
+    setIsOpen({
+      personal: false,
+      business: false,
+      resources: false,
+    });
+    showNav(false);
+  }, [location])
   // pr
   return (
     <div className="navbar shadow-lg pl-4 pr-20 max-nav:px-10 max-nav:h-16 bg-slate-100 df-jsb items-center sticky top-0 z-50">
