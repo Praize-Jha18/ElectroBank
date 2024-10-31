@@ -1,9 +1,10 @@
 import ReUsableHero from "../../reusables/ReUsableHero"
-import img from "../../assets/home3.jpg"
+import img from "../../assets/business.jpg"
 import ShortNote from "../../reusables/ShortNote"
 import FlexAndEnlarge from "../../reusables/FlexAndEnlarge"
 import LearnMore from "../../reusables/LearnMore"
 import businessIndexData from "../../reusables/siteData/business/businessIndexData"
+
 const BusinessIndex = () => {
 
   return (

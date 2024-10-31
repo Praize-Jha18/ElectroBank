@@ -2,11 +2,12 @@ import { Link } from "react-router-dom"
 import Help from "../../components/home/Help"
 import LearnMore from "../../reusables/LearnMore"
 import ReUsableHero from "../../reusables/ReUsableHero"
+import img from "../../assets/resource.jpg"
 
 const ResourceIndex = () => {
   return (
     <>
-<ReUsableHero img={null} heading={"Services"} height={"50vh"}/>
+<ReUsableHero img={img} heading={"Services"} height={"50vh"}/>
 <div className="bg-purple-50 df-flDc gap-10 py-10">
   <p className="numans-paragraph">Here is a list of our services </p>
   <Link to={"/authlogin"}

@@ -1,5 +1,5 @@
 import ReUsableHero from "../../reusables/ReUsableHero"
-import img from "../../assets/slide2.jpg"
+import img from "../../assets/personalboy.jpg"
 import ReUsableDatails from "../../reusables/ReUsableDatails"
 import LearnMore from "../../reusables/LearnMore"
 import { personalSavingData } from "../../reusables/siteData/personal/PersonalPageData"

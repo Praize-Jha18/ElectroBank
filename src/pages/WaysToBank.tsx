@@ -1,6 +1,6 @@
 import LearnMore from '../reusables/LearnMore'
 import ReUsableMiddleSections from '../reusables/ReUsableMiddleSections'
-import img from "../assets/online-banking-.jpg"
+import img from "../assets/wab.jpg"
 import { faUserCheck, faUserClock } from '@fortawesome/free-solid-svg-icons'
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons/faUserPlus'
 const WaysToBank = () => {

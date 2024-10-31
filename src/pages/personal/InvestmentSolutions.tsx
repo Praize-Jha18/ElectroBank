@@ -1,5 +1,5 @@
 import ReUsableHeroTH from "../../reusables/ReUsableHeroTH"
-import img from "../../assets/investsolutions.jpg"
+import img from "../../assets/investment.avif"
 import LearnMore from "../../reusables/LearnMore"
 import ReUsableMiddleSections from "../../reusables/ReUsableMiddleSections"
 import {investmentSolutionsData} from "../../reusables/siteData/personal/PersonalPageData"

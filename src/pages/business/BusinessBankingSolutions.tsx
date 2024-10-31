@@ -1,12 +1,13 @@
 import LearnMore from "../../reusables/LearnMore"
 import ReUsableHero from "../../reusables/ReUsableHero"
 import businessBankingSolutionsData from "../../reusables/siteData/business/bankingSolutionsData"
+import img from "../../assets/businessb.jpg"
 
 const BusinessBankingSolutions = () => {
 
   return (
     <>
-      <ReUsableHero img={null} heading={"Business Banking Solutions"} height={"50vh"} />
+      <ReUsableHero img={img} heading={"Business Banking Solutions"} height={"50vh"} />
 
       <div className="bg-purple-50   px-[15%] max-mdLap:px-[6%] py-14 w-screen text-center">
         <p className="text-lg font-medium text-center pb-8  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm">{businessBankingSolutionsData.detailsData.top}</p>

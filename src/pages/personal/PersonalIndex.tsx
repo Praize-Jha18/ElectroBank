@@ -2,7 +2,7 @@ import LearnMore from "../../reusables/LearnMore"
 import FlexAndEnlarge from "../../reusables/FlexAndEnlarge"
 
 import ReUsableHero from "../../reusables/ReUsableHero"
-import img from "../../assets/slide2.jpg"
+import img from "../../assets/personalboy.jpg"
 import ShortNote from "../../reusables/ShortNote"
 import { personalIndexData } from "../../reusables/siteData/personal/PersonalPageData"
 

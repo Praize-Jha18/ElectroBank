@@ -1,6 +1,6 @@
 import img1 from "../../../assets/account.jpg"
-import img2 from "../../../assets/bisloan.jpg"
-import img3 from "../../../assets/bisrealestate.jpg"
+import img2 from "../../../assets/loan.jpg"
+import img3 from "../../../assets/businessCREL.jpg" 
 const businessIndexData:{ items: {
     img: string;
     heading: string;

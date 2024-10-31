@@ -30,7 +30,7 @@ export const TitleUpdater = () => {
             '/business/commercial-real-estate-lending': 'Commercial Real Estate Lending - EliteOceanic Savings',
 
             //  resources
-            '/resources': 'Business - EliteOceanic Savings',
+            '/resources': 'Resources - EliteOceanic Savings',
             '/resources/digital-assets': 'Digital Assets - EliteOceanic Savings',
             '/resources/retirement-&-spouse-program': 'Retirement & Spouse Program - EliteOceanic Savings',
             '/resources/pamm-and-mam': 'Pamm And Mam - EliteOceanic Savings',

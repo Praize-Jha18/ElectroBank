@@ -3,14 +3,14 @@ import { Link, useLocation } from "react-router-dom"
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
-import how2 from "../../assets/how2.jpg"
-import how3 from "../../assets/how3.jpg"
-import how4 from "../../assets/how4.jpg"
-import how5 from "../../assets/how5.jpg"
-import how6 from "../../assets/how6.jpg"
-import how7 from "../../assets/how7.jpg"
-import how8 from "../../assets/how8.jpg"
-import how9 from "../../assets/how9.jpg"
+import how2 from "../../assets/elitesavings.jpg"
+import how3  from "../../assets/investment.avif"
+import how4 from "../../assets/crypto.jpg"
+import how5 from "../../assets/businessCREL.jpg"
+import how6 from "../../assets/maryJ.jpg"
+import how7  from "../../assets/retirement.jpg"
+import how8  from "../../assets/loan.jpg"
+import how9  from "../../assets/pam&mamm.jpg"
 const Help = (props: { show: boolean }) => {
     const location = useLocation();
     const isHome =  location.pathname == "/";
