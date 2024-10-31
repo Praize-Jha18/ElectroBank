@@ -6,10 +6,10 @@ import { faMoneyBill1Wave } from "@fortawesome/free-solid-svg-icons"
 import { faHornbill, faSimplybuilt } from '@fortawesome/free-brands-svg-icons';
 import { faCircle } from "@fortawesome/free-regular-svg-icons"
 
-import img1 from "../../../assets/savings.jpg"
-import img2 from "../../../assets/loans.jpg"
-import img3 from "../../../assets/checking.jpg"
-import img4 from "../../../assets/investment.jpg"
+import img1 from "../../../assets/personalboy.jpg"
+import img2 from "../../../assets/loan.jpg"
+import img3 from "../../../assets/personalchecking.avif"
+import img4 from "../../../assets/investment.avif"
 
 import ReUsableDetailsType from "../../types/reusableDetailsType";
 

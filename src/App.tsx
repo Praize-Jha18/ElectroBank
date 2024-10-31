@@ -5,7 +5,11 @@ import router from './router';
 function App() {
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={
+    <div className="fixed h-screen w-screen dfAc">
+
+      <div className="custom-loader"></div>
+      </div>}>
       <RouterProvider router={router} />
     </Suspense>
   );
