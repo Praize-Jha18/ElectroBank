@@ -1,15 +1,28 @@
 import ReUsableDetailsType from "../../types/reusableDetailsType";
 
 const businessSavingAccountData:{ detailsData:ReUsableDetailsType } = {
-    detailsData: {
-        top: "As a business owner, you understand the importance of ensuring financial stability for your organization. When you open a business savings account at EliteOceanic Savings®, you are establishing a safe place where your reserves can flourish. Plus, deposits are reinvested in the community to promote economic strength.",
-        mid: [
-          {heading:"Business Savings",body:"Designed for businesses that want to build a savings fund, this account ensures cash reserves are readily accessible."},
-          {heading:"Business Money Market Account",body:"With this savings option, businesses that maintain higher account balances are rewarded with a higher rate of interest."},
-          {heading:"Certificates of Deposit (CDs)",body:"If you are looking to maximize money and grow you business’ cash reserve, CDs are available for various terms at competitive rates."},
-          {heading:"Health Savings Accounts",body:"Combat rising healthcare costs with a Health Savings Account (HSA). Designed exclusively for covering medical expenses, HSAs can provide significant tax benefits to eligible individuals. HSA contributions made by an employer or employee are excluded from income. HSA earnings are tax-deferred and HSA assets are not taxed if used for qualified medical expenses. Unused HSA assets may be used for retirement; however, they will be subject to a 20% penalty until the HSA beneficiary turns 65. If the funds are not used for medical expenses, they will be subject to income taxes."},
-        ],
-        bottom: null
-      } 
+  detailsData: {
+    top: "As a business owner, securing your financial future is crucial. By opening a business savings account at EliteOceanic Savings®, you not only create a safe haven for your reserves but also contribute to community reinvestment that bolsters local economic growth.",
+    mid: [
+        {
+            heading: "Business Savings Account",
+            body: "Build your savings with ease. This account is tailored for businesses seeking accessible cash reserves to meet their needs."
+        },
+        {
+            heading: "Business Money Market Account",
+            body: "Enjoy higher interest rates with this account, designed for businesses that maintain larger balances."
+        },
+        {
+            heading: "Certificates of Deposit (CDs)",
+            body: "Maximize your funds with our competitively priced CDs, available in various terms to suit your cash reserve strategy."
+        },
+        {
+            heading: "Health Savings Accounts (HSAs)",
+            body: "Offset rising healthcare expenses with an HSA. Enjoy tax benefits on contributions, deferred earnings, and use your funds tax-free for qualified medical costs. Funds can also serve as a retirement asset, with specific tax implications."
+        },
+    ],
+    bottom: null
+}
+
 }
 export default businessSavingAccountData;

@@ -19,63 +19,66 @@ const personal: string = "personal";
 const investmentSolutionsData: { data: ReUsableMiddleSectionsType } = {
     data: {
         heading: "Our Investment Solutions",
-        subheading: "Building an international investment portfolio shouldn’t involve guesswork. Together with our investment manager, Melville Douglas, we’ve developed a complete range of international investment solutions to suit your needs.",
-        title: "BENEFITS OF OUR INTERNATIONAL INVESTMENT SOLUTIONS",
+        subheading: "Building an international investment portfolio shouldn’t be left to chance. In partnership with our investment manager, Melville Douglas, we offer a comprehensive range of international investment solutions tailored to your needs.",
+        title: "ADVANTAGES OF OUR INTERNATIONAL INVESTMENT SOLUTIONS",
         body: [
-            { icon: faBriefcase, heading: "Actively Managed", body: "We follow an active investment philosophy with a strong strategic bias" },
-            { icon: faClone, heading: "Wide Choice", body: "Choose from a range of actively-managed international investment solutions" },
-            { icon: faBuromobelexperte, heading: "Appropriate Risk", body: "We advise and help build a portfolio so you can meet your investment goals", },
-            { icon: faHouzz, heading: "Proven Philosophy", body: "Our rigorous, research-driven process produces outstanding results" }
+            { icon: faBriefcase, heading: "Active Management", body: "We implement an active investment strategy with a strong focus on strategic alignment." },
+            { icon: faClone, heading: "Diverse Options", body: "Select from a variety of actively managed international investment solutions." },
+            { icon: faBuromobelexperte, heading: "Tailored Risk", body: "We provide guidance to build a portfolio that aligns with your investment objectives." },
+            { icon: faHouzz, heading: "Proven Strategy", body: "Our rigorous, research-based process consistently delivers exceptional results." }
         ]
-
     }
+    
 };
 const loansData: { data: ReUsableMiddleSectionsType } = {
     data: {
         heading: "Personal Loans",
-        subheading: "Experience a whole new world full of opportunity. Get a personal loan that offers you the flexibility and convenience to confidently pursue your life and financial goals.",
-        title: "BENEFITS OF OUR PERSONAL LOANS",
+        subheading: "Discover a world of opportunities. Secure a personal loan that provides the flexibility and convenience to help you confidently achieve your life and financial goals.",
+        title: "ADVANTAGES OF OUR PERSONAL LOANS",
         body: [
-            { icon: faSimplybuilt, heading: "NO FUSS", body: "Straightforward application process as you are already a client" },
-            { icon: faCircle, heading: "FLEXIBILITY", body: "Choose from our personal loans designed to meet a range of needs" },
-            { icon: faMoneyBill1Wave, heading: "CURRENCY CHOICE", body: "Our loans are available in the same currency of the account, primarily sterling or US dollars" },
-            { icon: faHornbill, heading: "Varying terms", body: "Our loans are available over the short to long-term and are renewable" },
+            { icon: faSimplybuilt, heading: "HASSLE-FREE", body: "Enjoy a straightforward application process since you are already a client." },
+            { icon: faCircle, heading: "FLEXIBILITY", body: "Select from a variety of personal loans tailored to meet diverse needs." },
+            { icon: faMoneyBill1Wave, heading: "CURRENCY OPTIONS", body: "Our loans are offered in the currency of your account, primarily in sterling or US dollars." },
+            { icon: faHornbill, heading: "DIVERSE TERMS", body: "Choose from short to long-term loans that are renewable." }
         ]
     }
+    
 };
 const personalCheckingData: { detailsData: ReUsableDetailsType } = {
     detailsData: {
-        top: "Whether you are looking to switch banks or start a new checking account, EliteOceanic Savings® offers a variety of accounts to fit your financial needs. As a local community bank, we reinvest your deposits into the communities we serve. When you choose EliteOceanic Savings, you get a great account with great service, and help the community flourish.",
-        mid: [{ heading: "Completely Free Checking", body: "With no minimum balance and no monthly service charge, Completely Free Checking helps you avoid the hassle of added fees." },
-        { heading: "Direct Free Checking with Interest", body: "When you have at least one direct deposit or automatic payment set up with this account, we’ll pay you competitive interest. Plus, you won’t have to worry about maintaining a minimum balance or paying a monthly service charge." },
-        { heading: "High Interest Checking", body: "Designed for customers who maintain higher balances, this account offers a greater interest rate and extra benefits. By sustaining a $1,500 minimum balance, you can even avoid the low monthly fee of $6." },
-        { heading: "50+ Free Checking with Interest", body: "Customers who are 50 years of age or better can enjoy this free account that features a competitive interest rate, no minimum balance requirement, and no monthly service charge." },
-        { heading: "Overdraft Privilege", body: "Want to protect your checking account from accidental overdrafts? Overdraft Privilege (ODP) is designed to help you avoid high charges from merchants for returned checks and to spare you from the hassle of denied purchases and dishonored checks." }
-        ], bottom: "In the event of an accidental overdraft from your checking account, Overdraft Privilege can help. Instead of automatically returning unpaid, insufficient fund items (checks, etc.) that you may have, EliteOceanic Savings® will consider, without obligation on our part, payment of your reasonable overdrafts.*"
+        top: "Whether you're switching banks or opening a new checking account, EliteOceanic Savings® offers a range of accounts tailored to your financial needs. As a local community bank, we reinvest your deposits into the communities we serve. Choosing EliteOceanic Savings means you get a great account, excellent service, and contribute to the flourishing of your community.",
+        mid: [
+            { heading: "Completely Free Checking", body: "Enjoy no minimum balance and no monthly service charge, allowing you to avoid the hassle of extra fees." },
+            { heading: "Direct Free Checking with Interest", body: "Set up at least one direct deposit or automatic payment, and earn competitive interest without worrying about maintaining a minimum balance or incurring monthly service charges." },
+            { heading: "High Interest Checking", body: "This account is perfect for customers with higher balances, offering a better interest rate and added benefits. Maintain a $1,500 minimum balance to avoid a $6 monthly fee." },
+            { heading: "50+ Free Checking with Interest", body: "Available for customers aged 50 and above, this free account features a competitive interest rate, no minimum balance requirement, and no monthly service charge." },
+            { heading: "Overdraft Privilege", body: "Protect your checking account from accidental overdrafts. Overdraft Privilege (ODP) helps you avoid costly charges from merchants for returned checks and spares you from the inconvenience of denied purchases." }
+        ],
+        bottom: "If you accidentally overdraft your checking account, Overdraft Privilege can assist. Instead of automatically returning unpaid items (checks, etc.) due to insufficient funds, EliteOceanic Savings® may, at our discretion, consider covering your reasonable overdrafts.*"
     }
+    
 };
 const personalIndexData: { items: { img: string, heading: string, body: string, link: string }[] } = {
     items: [
-        { img: img1, heading: "Checking", body: "Manage your dollars and cents with confidence.", link: `/${personal}/personal-checking` }, {
-            img: img3,
-            heading: "Savings", body: "Plan for tomorrow’s expenses and commit to save.", link: `/${personal}/savings`
-        },
-        { img: img2, heading: "Loans", body: "Find a budget-friendly way to afford the next step.", link: `/${personal}/loans` },
-
-        { img: img4, heading: "Investment Solutions", body: "We provide personal Investment solutions for out clients.", link: `/${personal}/investment-solutions` },
+        { img: img1, heading: "Checking", body: "Manage your finances with confidence and ease.", link: `/${personal}/personal-checking` },
+        { img: img3, heading: "Savings", body: "Prepare for future expenses and commit to your savings goals.", link: `/${personal}/savings` },
+        { img: img2, heading: "Loans", body: "Discover budget-friendly options to support your next steps.", link: `/${personal}/loans` },
+        { img: img4, heading: "Investment Solutions", body: "We offer personalized investment solutions tailored for our clients.", link: `/${personal}/investment-solutions` }
     ]
+    
 };
 const personalSavingData: { detailsData: ReUsableDetailsType } = {
     detailsData: {
-        top: "Saving for a rainy day, a sunny vacation, or the home of your dreams? A number of options are available to help you put away a little extra. And since EliteOceanic Savings® deposits are reinvested into the community, you’ll be supporting the financial well-being of surrounding neighborhoods while you save for the future.",
+        top: "Whether you're saving for a rainy day, planning a sunny vacation, or dreaming of your ideal home, we offer various options to help you save. Plus, with EliteOceanic Savings®, your deposits are reinvested into the community, supporting the financial health of your neighborhood while you build your future.",
         mid: [
-            { heading: "Personal Savings Accounts", body: "Take the first step toward building your personal savings by utilizing a flexible account that will accommodate your goals." },
-            { heading: "Money Market Accounts", body: "Our Money Market Accounts are designed to reward higher balances with competitive interest rates." },
-            { heading: "Certificates of Deposit (CDs)", body: "We offer CDs for various terms at competitive rates to help meet your investment goals and cash flow needs." },
-            { heading: "Health Savings Accounts", body: "A Health Savings Account (HSA) is designed exclusively for covering medical expenses incurred by the HSA account holder and his or her dependents. HSA contributions made by an employer or employee are excluded from your income. Earnings are tax-deferred and HSA assets are not taxed if used for qualified medical expenses. Unused HSA assets may even be used for retirement." },
-            { heading: "Individual Retirement Accounts", body: "Individual Retirement Accounts (IRAs) are accounts that allow for certain tax advantages and shelters while saving for retirement. We offer two types of IRAs – Traditional and Roth." }
+            { heading: "Personal Savings Accounts", body: "Kickstart your savings journey with a flexible account tailored to your goals." },
+            { heading: "Money Market Accounts", body: "Our Money Market Accounts reward you with competitive interest rates for maintaining higher balances." },
+            { heading: "Certificates of Deposit (CDs)", body: "Choose from a variety of CDs with competitive rates and terms to suit your investment objectives and cash flow needs." },
+            { heading: "Health Savings Accounts", body: "Health Savings Accounts (HSAs) help cover medical expenses for you and your dependents. Contributions are tax-exempt, earnings grow tax-deferred, and funds used for qualified medical expenses are tax-free. Unused assets can also be leveraged for retirement." },
+            { heading: "Individual Retirement Accounts", body: "Take advantage of tax benefits with our Individual Retirement Accounts (IRAs), available in both Traditional and Roth options to help you save for retirement." }
         ],
         bottom: null
     }
+    
 }
 export { investmentSolutionsData, loansData, personalCheckingData, personalIndexData, personalSavingData };

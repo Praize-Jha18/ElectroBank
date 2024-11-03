@@ -48,8 +48,8 @@ const Hero = () => {
                             <span className="font-bold text-6xl font-serif">BANKING</span>
                         </div>
                     </div>
-                    <p className="text-[#a7b6c3] text-xl">Kick-start your money goals this season.
-                        <br></br>Earn more and have privacy with our several premium banking offers.</p>
+                    <p className="text-[#a7b6c3] text-xl">Jumpstart your financial journey this season. 
+                        <br></br>Earn more with our premium banking offers. Enjoy privacy.</p>
                     <Link to={"/auth/login"} className="bg-sky-500 transition-all  duration-500 ease-in-out inline text-white font-semibold text-center  text-md w-[15rem] py-3 hover:w-[17rem] rounded-lg">CREATE AN ACCOUNT! <FontAwesomeIcon className="pl-1" icon={faArrowRight} /></Link>
 
                 </div>

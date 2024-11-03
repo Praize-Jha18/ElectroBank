@@ -1,75 +1,97 @@
 import ReUsableDetailsType from "../../types/reusableDetailsType"
 
 const resourceCAIData: { detailsData: ReUsableDetailsType } = {
-    detailsData:
-    {
+    detailsData: {
         top: `
-      Big institutional investors are getting increasingly high on the growth potential for products derived from the cannabis plant, more commonly known as marijuana. Bank of Montreal, in a decidedly bullish forecast, says the market could be as a large as $194 billion worldwide by 2025, should the U.S. federal government legalize cannabis, Business Insider reports.
-      
-      Growth like this would further boost cannabis stocks and spur more entrants. A long list of cannabis-related stocks already trade on North American exchanges and include Cronos Group Inc. (CRON), Aurora Cannabis Inc. (ACB), Canopy Growth Corp. (CGC), and Tilray Inc. (TLRY).
-      
-      EliteOceanic Savings is a big investor in the cannabis market, we strive to help investor make good use of funds deposited in their accounts with the help of professional fund managers for the best possible investment returns from this flourishing sector.`,
-        mid: [{
-            heading: "Significance For Investors", body: `What’s striking is how rapidly cannabis investments are being embraced by Wall Street and other areas. In a poll of 120 senior executives at leading private equity, venture capital (VC), hedge fund, and other institutional investment organizations, almost 33% said that the cannabis industry has the greatest growth potential this year, a close second behind technology, according to accounting firm EisnerAmper, which did the survey. The most bullish were hedge funds, with 37% putting cannabis in first place, per BI.
-      
-      So no wonder that money is rushing into cannabis investments of all kinds. Already, the combined market value of public cannabis stocks trading on U.S. and Canadian exchanges has ballooned to tens of billions of dollars. Also, venture capital firms invested $1.3 billion in 150 cannabis-related deals in the first half of 2019, already outstripping the $1 billion in VC money spent in all of 2018, VC deal monitor Pitchbook calculates, per BI. Private equity firms also have jumped in, investing $474 million in 19 cannabis-related transactions during 2018, and are investing at an even faster clip in 2019, according to the same sources.
-      
-      With this type of impressive growth, it’s no wonder that many investors are interested in investing in publicly traded cannabis stocks.`}],
+            Institutional investors are increasingly optimistic about the growth potential of cannabis-derived products. According to the Bank of Montreal, the market could reach $194 billion globally by 2025 if the U.S. federal government legalizes cannabis, as reported by Business Insider. 
+    
+            Such growth would not only elevate cannabis stocks but also attract new entrants into the market. Numerous cannabis-related stocks, such as Cronos Group Inc. (CRON), Aurora Cannabis Inc. (ACB), Canopy Growth Corp. (CGC), and Tilray Inc. (TLRY), are already trading on North American exchanges. 
+    
+            At EliteOceanic Savings, we are committed to helping investors make the most of their deposits by collaborating with professional fund managers to optimize investment returns in this thriving sector.`,
+        mid: [
+            {
+                heading: "Significance for Investors",
+                body: `The rapid acceptance of cannabis investments on Wall Street is noteworthy. A recent survey by EisnerAmper found that nearly 33% of 120 senior executives in private equity, venture capital, hedge funds, and institutional investment view the cannabis industry as having the highest growth potential this year, second only to technology. Hedge funds are particularly bullish, with 37% ranking cannabis first.
+    
+                Consequently, substantial capital is flowing into various cannabis investments. The market value of public cannabis stocks in the U.S. and Canada has soared to tens of billions of dollars. In the first half of 2019 alone, venture capital firms invested $1.3 billion across 150 cannabis-related deals, surpassing the entire $1 billion invested in 2018, according to Pitchbook. Private equity firms have also ramped up their investments, contributing $474 million to 19 cannabis-related transactions in 2018 and continuing at an even faster pace in 2019.
+    
+                With such remarkable growth, it's clear why many investors are keen to explore publicly traded cannabis stocks.`
+            }
+        ],
         bottom: null
     }
-
+    
 };
 
 
 const resourceDigitalAssetsData: { detailsData: ReUsableDetailsType } = {
     detailsData: {
-        top: `A cryptocurrency is a digital coin, designed to be transferred between people in virtual transactions. Cryptocurrencies exist only as data and not as physical objects; you cannot actually hold a Bitcoin in your hand or keep Ethereum in your safe. Owning a Bitcoin means you have the collective agreement of each and every computer on the Bitcoin network that it is currently owned by you and – more importantly – that it was legitimately created by a miner
-  
-  You don’t need to be a cryptocurrency guru to earn from this sector. Our professional traders know just when to make the right calls and which coins to flip. Trades are automated with professional human supervision to make sure trades are healthy and free from errors or loss of funds.`,
-        mid: [{ body: "Cryptocurrencies are handled like cash but are mined like gold. Mining is simply the process of verifying a crypto transaction. People around the world transfer e-coins from wallet to wallet, while miners use computer-processing power to maintain the blockchain and verify these transactions.", heading: "What cryptocurrency miners do" }],
-        bottom: "When a new crypto is launched, its founders announce how many coins will be mined. Once the quota is reached, no further coins can be produced. The first digital coin introduced was Bitcoin, which remains today the benchmark for all other digital coins. Among other currencies that have made their way into the cryptocurrency hall-of-fame we have: Ethereum, Ripple, Litecoin, EOS, and a number of derived currencies, including Bitcoin Cash and Bitcoin Gold."
+        top: `
+            Cryptocurrency is a digital asset designed for secure virtual transactions. Unlike physical money, cryptocurrencies exist solely as data—you can't hold a Bitcoin or store Ethereum in a safe. Owning Bitcoin means you have the consensus of the entire Bitcoin network, confirming its legitimacy and your ownership.
+    
+            You don’t need to be a crypto expert to profit in this space. Our seasoned traders know the optimal moments to buy and sell various coins. Trades are automated but supervised by professionals, ensuring accuracy and safeguarding your funds.`,
+        mid: [
+            {
+                heading: "What Cryptocurrency Miners Do",
+                body: `Cryptocurrencies operate like cash but are mined like gold. Mining involves verifying crypto transactions, with individuals worldwide transferring e-coins between wallets while miners utilize computational power to maintain the blockchain and validate these exchanges.`
+            }
+        ],
+        bottom: `When a new cryptocurrency is launched, its founders set a limit on how many coins will be mined. Once that limit is reached, no more can be produced. Bitcoin, the first digital currency, remains the standard for all cryptocurrencies. Other notable coins in the crypto hall of fame include Ethereum, Ripple, Litecoin, EOS, and various offshoots like Bitcoin Cash and Bitcoin Gold.`
     }
+    
 };
 
 
 const resourcePAMData: { detailsData: ReUsableDetailsType } = {
     detailsData: {
-        top: `PAMM (Percentage Allocation Management Module) and MAM (Multi-Account Manager) accounts allow fund managers to manage multiple accounts from a single account without having to create an investment fund.
-
-The performance (profits and losses) of a PAMM or MAM account manager is distributed among the managed accounts. The clients’ managed accounts are connected to our account manager’s main account and all trades made by the manager are reflected proportionally in the clients’ accounts.
-`,
+        top: `
+            PAMM (Percentage Allocation Management Module) and MAM (Multi-Account Manager) accounts empower fund managers to oversee multiple client accounts from a single master account without the need for a dedicated investment fund.
+    
+            In these systems, the performance—profits and losses—of a PAMM or MAM account manager is distributed proportionally among the managed accounts. Each client's account is linked to the manager's main account, ensuring that all trades executed by the manager are reflected in their accounts based on their respective allocations.`,
         mid: [
-            { body: "ace Bank PAMM Master account balance represents the total amount of all clients’ deposits. To ensure the security of investors’ funds, client deposits remain in their own trading accounts, our managers do not have direct access to these accounts and therefore cannot make any withdrawals.", heading: "Managed Accounts" },
             {
-                body: `The PAMM account features a management module that distributes the sizes of trades according to an allocation percentage. This solution is offered by many forex brokers for investors and fund managers. With a PAMM account, an investor can also allocate a percentage of h is account to one or more managers.
-
-The manager’s PAMM account is a large “main account”, whose capital is equal to the sum of the sub-accounts.
-The manager’s trades are automatically replicated in the sub-accounts according to a percentage basis. For example, if the trader makes a 100-lot trade on the EURUSD, the trade is divided among the individual sub-accounts (clients) into smaller parts based on the percentage of equity of each sub-account in relation to the master account. This means that if the size of an individual sub-account is equal to 1% of the main account’s equity, the size of the trade on this account will be 1 lot (1% of 100 lots).
-`, heading: "What is a PAMM account?"
+                heading: "Managed Accounts",
+                body: `At Ace Bank, the balance of a PAMM Master account represents the collective deposits of all clients. To safeguard investors' funds, client deposits remain in their individual trading accounts. Our managers do not have direct access to these accounts, ensuring no unauthorized withdrawals can occur.`
             },
-            { body: "The MAM account should not be confused with the MetaQuotes multi-terminal system, which has its limitations. A MAM account allows you to use the percentage allocation method like a PAMM account, but it provides greater flexibility to allocate the trades and adjust the risk of each sub-account based on the clients’ risk profiles.", heading: "What is a MAM account?" },
+            {
+                heading: "What is a PAMM Account?",
+                body: `A PAMM account features a management module that allocates trade sizes according to a specified percentage. This approach, offered by many forex brokers, allows investors to assign a portion of their account to one or multiple managers.
+    
+                The manager's PAMM account serves as a "master account," where its capital equals the total of all connected sub-accounts. When a trade is executed, it is automatically divided among the sub-accounts based on their equity percentages. For example, if a manager places a 100-lot trade on EURUSD and an individual sub-account holds 1% of the master account's equity, that sub-account will reflect a trade of 1 lot.`
+            },
+            {
+                heading: "What is a MAM Account?",
+                body: `It's important to distinguish a MAM account from the MetaQuotes multi-terminal system, which has its own limitations. A MAM account employs the percentage allocation method like a PAMM account but offers enhanced flexibility. Fund managers can tailor trades and adjust risk profiles for each sub-account according to individual client preferences.`
+            },
         ],
-        bottom: `For example, the manager can allocate trades on a fixed basis, which means that he can define the number of lots traded by each individual account. This fixed allocation can also be done using a LAMM (Lot Allocation Management Module) account.
-    The manager can also change the amount of leverage applied to the sub-accounts if his clients want to take on a greater level of risk.
-    `
-
+        bottom: `
+            For instance, the manager can allocate trades on a fixed basis, specifying the number of lots for each individual account. This fixed allocation can also be implemented using a LAMM (Lot Allocation Management Module) account. Additionally, managers can adjust leverage levels for sub-accounts, accommodating clients who wish to pursue greater risk opportunities.
+        `
     }
+    
 };
 
 const resourceRASProgramData: { detailsData: ReUsableDetailsType } = {
-    detailsData:{
-    top: `Dramatic advances in healthcare have extended the lives of people in, predominantly, first-world and developed countries. That means that without adequate personal savings and/or pensions, people could easily outlive their retirement funds.
-
-In times of economic downturn retirees may choose to “come out of retirement” and re-enter the workforce on a seasonal, part-time or full-time basis to earn income and obtain benefits, especially costly health insurance coverage.
-
-Think EliteOceanic Savings when you think retirement. We have well structured retirement portfolio designed to suit each unique investor. Our vision for you is to retire and never worry about running out of money.`,
-    mid: [{
-      body: `A pension plan is a retirement plan that requires an employer to make contributions into a pool of funds set aside for a worker’s future benefit. The pool of funds is invested on the employee’s behalf, and the earnings on the investments generate income to the worker upon retirement.
-
-In the simplest sense, retirement planning is the planning one does to be prepared for life after paid work ends, not just financially but in all aspects of life. The non-financial aspects include lifestyle choices such as how to spend time in retirement, where to live, when to completely quit working, etc. A holistic approach to retirement planning considers all these areas.`, heading: "How does retirement plan work?"
-    }],
-    bottom: "The emphasis one puts on retirement planning changes throughout different life stages. Early in a person’s working life, retirement planning is about setting aside enough money for retirement. During the middle of your career, it might also include setting specific income or asset targets and taking the steps to achieve them. Once you reach retirement age, you go from accumulating assets to what planners call the distribution phase. You’re no longer paying in; instead, your decades of saving are paying out."
-  }
+    detailsData: {
+        top: `
+            Advances in healthcare have significantly extended life expectancy, particularly in developed countries. This increase in lifespan raises a critical question: without sufficient personal savings or pensions, how will individuals ensure they don’t outlive their retirement funds?
+    
+            During economic downturns, many retirees may feel compelled to re-enter the workforce—whether on a part-time, seasonal, or full-time basis—to secure additional income and access essential benefits like health insurance.
+    
+            At EliteOceanic Savings, we understand the importance of a solid retirement strategy. Our well-structured retirement portfolios are tailored to meet the unique needs of each investor. Our vision is for you to retire confidently, without the fear of running out of money.`,
+        mid: [
+            {
+                heading: "How Does a Retirement Plan Work?",
+                body: `A pension plan is a retirement strategy requiring employers to contribute to a fund reserved for an employee's future benefits. These funds are invested on behalf of the worker, generating income upon retirement.
+    
+                In essence, retirement planning encompasses preparing for life after employment, considering not just financial aspects but also lifestyle choices. This holistic approach addresses how you’ll spend your time, where you’ll live, and when to fully transition from work.`
+            }
+        ],
+        bottom: `
+            The focus on retirement planning evolves through different life stages. In the early years, it’s primarily about saving enough money. Mid-career, it shifts to setting specific financial goals and actions to achieve them. Upon reaching retirement age, the focus changes from accumulating assets to what planners term the distribution phase, where your years of saving start paying out, rather than paying in.
+        `
+    }
+    
 }
 
 export { resourceCAIData, resourceDigitalAssetsData, resourcePAMData ,resourceRASProgramData};

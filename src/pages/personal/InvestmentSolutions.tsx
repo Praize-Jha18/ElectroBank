@@ -7,7 +7,7 @@ const InvestmentSolutions = () => {
 
   return (
     <>
-      <ReUsableHeroTH img={img} heading={"Investment Solutions"} height={null} details={"We have merged. For you, that means nothing but more of the same high levels of customer service and investment management."} />
+      <ReUsableHeroTH img={img} heading={"Investment Solutions"} height={null} details={"We’ve merged, which means you can expect the same exceptional customer service and investment management you’ve always received."} />
       <ReUsableMiddleSections data={investmentSolutionsData.data} />
       <LearnMore text="Investment Solutions" />
     </>

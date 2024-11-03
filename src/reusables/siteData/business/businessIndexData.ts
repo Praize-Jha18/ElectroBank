@@ -7,25 +7,26 @@ const businessIndexData:{ items: {
     body: string;
     link: string;
   }[]} = {
-    items:    [
-        {
+    items: [
+      {
           img: img1,
-          heading: "Accounts",
-          body: "Streamline day-to-day financial matters with our business checking and savings options.",
+          heading: "Business Accounts",
+          body: "Simplify your financial operations with our tailored checking and savings accounts.",
           link: "/business/business-savings-account"
-        },
-        {
+      },
+      {
           img: img2,
-          heading: "Business Loans",
-          body: "Embrace growth and find new success with the supplemental financing your business needs.",
+          heading: "Growth Financing",
+          body: "Unlock new opportunities with our business loans designed to fuel your expansion.",
           link: "/business/business-loans"
-        },
-        {
+      },
+      {
           img: img3,
-          heading: "Commercial Real Estate Lending",
-          body: "Find a budget-friendly way to afford the next step.",
+          heading: "Commercial Real Estate Loans",
+          body: "Secure funding for your next investment with our cost-effective real estate lending solutions.",
           link: "/business/commercial-real-estate-lending"
-        },
-      ]
+      },
+  ]
+  
 }
 export default businessIndexData;

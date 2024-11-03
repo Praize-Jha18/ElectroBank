@@ -1,17 +1,35 @@
 import ReUsableDetailsType from "../../types/reusableDetailsType";
 
 const businessCRELData:{detailsData:ReUsableDetailsType } = {
-    detailsData:{
-        top: "Select a lending option below to learn more:",   mid: [
-          {heading:"Commercial Owner-Occupied Real Estate",body:"If you’re ready to stop paying rent on your business location or want to purchase a commercial building that will house your business, we offer a variety of loans for the purchase, refinance, and improvement of owner-occupied commercial property."},
-          {heading:"SBA 504 Loans",body:"The SBA 504 Loan Program helps small business owners expand their businesses through the purchase of commercial real estate or capital equipment. The SBA promotes the development of businesses by offering a number of loan programs that are tailored to the specific capital needs of growing businesses. The 504 program works by distributing the loan among three parties: the business owner (down payment), a conventional lender (bank), and a Certified Development Company (CDC)."},
-          {heading:"Features",body:`May include a lower required down payment and a longer-term fixed interest rate
-Designed to provide financing for the purchase of fixed assets, which usually means real estate, buildings, and machinery`},
-          {heading:"Commercial Real Estate",body:"Commercial real estate (CRE) is income-producing real estate that is used solely for business purposes, such as retail centers, office complexes, hotels, and apartments. EliteOceanic Savings® can provide financing for the acquisition, development, and construction of these properties. This is typically accomplished through commercial real estate loans, which are term loans secured by commercial property rather than residential property. Depending on the property type, there are varying options for down payment, amortization, rate, and loan term."},
-          {heading:"Commercial Construction",body:"As a community bank, we understand the value of investing in the Lincoln community. We provide commercial construction loans to facilitate the development of commercial real estate properties, including strip malls, residential apartments, offices, industrial facilities, hotels, and mixed-use buildings. Our local lenders can evaluate your financial situation, the value of the land you are looking to buy, and provide counsel on your project. Depending on the property type, there are varying options for down payment, amortization, rate, and loan term."},
-{heading:"Commercial Bridge Loan",body:"Commercial bridge loans are a short-term commercial real estate financing option that can provide temporary financing to help sustain cash flow until you improve, refinance, lease up, sell, or complete the construction of a commercial property."}
+    detailsData: {
+        top: "Explore our lending options to find the perfect fit for your business:",
+        mid: [
+            {
+                heading: "Commercial Owner-Occupied Real Estate",
+                body: "Ready to invest in your business space? We offer loans for purchasing, refinancing, and improving owner-occupied commercial properties."
+            },
+            {
+                heading: "SBA 504 Loans",
+                body: "Expand your business with SBA 504 Loans designed for acquiring commercial real estate or capital equipment, involving a shared financing approach with down payment, a bank, and a Certified Development Company."
+            },
+            {
+                heading: "Features",
+                body: "Enjoy lower down payment requirements and longer-term fixed interest rates for financing fixed assets like real estate and machinery."
+            },
+            {
+                heading: "Commercial Real Estate Financing",
+                body: "Secure funding for income-generating properties, including retail spaces and office complexes, through our tailored commercial real estate loans."
+            },
+            {
+                heading: "Commercial Construction Loans",
+                body: "Invest in your community with loans for developing commercial properties such as strip malls and apartments, with flexible terms tailored to your project."
+            },
+            {
+                heading: "Commercial Bridge Loans",
+                body: "Need temporary financing? Our commercial bridge loans offer quick cash flow solutions while you await property improvements, refinancing, or sales."
+            },
         ],
         bottom: null
-    }
+    }    
 }
 export default businessCRELData;
