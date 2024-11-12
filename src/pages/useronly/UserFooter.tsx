@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import { DocumentTextOutline, HomeOutline, SettingsOutline, SwapVertical } from 'react-ionicons'
 
-const footerLinks:{to:string,link:string,icon:JSX.Element}[] = [
-    { to: "", link: "Home",icon:<HomeOutline/> },
-    { to: "", link: "Transactions",icon:<DocumentTextOutline/> },
-    { to: "", link: "Transfer",icon:<SwapVertical/> },
-    { to: "", link: "Settings",icon:<SettingsOutline/> },
+const footerLinks: { to: string, link: string, icon: JSX.Element }[] = [
+    { to: "", link: "Home", icon: <HomeOutline /> },
+    { to: "/account/account-statement", link: "Transactions", icon: <DocumentTextOutline /> },
+    { to: "/account/domestic-transfer", link: "Transfer", icon: <SwapVertical /> },
+    { to: "/account/profile", link: "Settings", icon: <SettingsOutline /> },
 ]
 const UserFooter = () => {
     return (

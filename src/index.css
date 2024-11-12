@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   html {
     @apply text-[62.5%] font-sans text-base overflow-x-hidden;
@@ -22,19 +23,23 @@
   .dfAc {
     @apply flex items-center justify-center;
   }
-.footerLinks{
-  @apply font-helvetica text-base text-[#54595f] max-mdLap:text-sm max-tab:text-lg
-}
+
+  .footerLinks {
+    @apply font-helvetica text-base text-[#54595f] max-mdLap:text-sm max-tab:text-lg
+  }
+
   .btn {
     @apply bg-sky-500 transition-all duration-500 ease-in-out text-center border-transparent border text-white rounded-md hover:text-sky-500 hover:bg-white hover:border hover:border-sky-500
   }
 
   .numans-paragraph {
-    @apply text-lg font-medium text-center pb-1  font-numans  leading-relaxed   text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm
+    @apply text-lg font-medium text-center pb-1 font-numans leading-relaxed text-stone-500 max-mdLap:text-lg max-mdLap:leading-[1.6] max-tab:text-base max-mdPhone:text-sm
   }
-.registerInputStyle{
- @apply w-full block text-black mt-1 placeholder:text-stone-500 bg-slate-100 border-b-stone-500 border-b-[1px]  h-10 text-base outline-none
-}
+
+  .registerInputStyle {
+    @apply w-full block text-black mt-1 placeholder:text-stone-500 bg-slate-100 border-b-stone-500 border-b-[1px] h-10 text-base outline-none
+  }
+
   .df-jc {
     @apply flex justify-center;
   }
@@ -54,7 +59,7 @@
   .df-jsb {
     @apply flex justify-between;
   }
-  
+
   .df-jse {
     @apply flex justify-self-end;
   }
@@ -62,15 +67,15 @@
   .df-fldc {
     @apply flex flex-col;
   }
-  
+
   .df-flDc {
     @apply flex items-center justify-center flex-col;
   }
-  
+
   .df-fldc-jc {
     @apply flex justify-center flex-col;
   }
-  
+
   .df-fldc-ac {
     @apply flex items-center flex-col;
   }
@@ -79,7 +84,8 @@
     @apply flex items-center justify-center flex-wrap;
   }
 }
-    /* hero
+
+/* hero
     
     
     */
